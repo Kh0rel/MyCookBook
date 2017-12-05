@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9DE04681FD737480079D0E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE04671FD737480079D0E8 /* AppDelegate.swift */; };
+		A9DE046A1FD737480079D0E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE04691FD737480079D0E8 /* ViewController.swift */; };
+		A9DE046D1FD737480079D0E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DE046B1FD737480079D0E8 /* Main.storyboard */; };
+		A9DE046F1FD737480079D0E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DE046E1FD737480079D0E8 /* Assets.xcassets */; };
+		A9DE04721FD737480079D0E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DE04701FD737480079D0E8 /* LaunchScreen.storyboard */; };
+		A9DE047D1FD737490079D0E8 /* MyCookBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE047C1FD737490079D0E8 /* MyCookBookTests.swift */; };
+		A9DE04821FD737490079D0E8 /* MyCookBook WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A9DE04811FD737490079D0E8 /* MyCookBook WatchKit App.app */; };
+		A9DE04881FD737490079D0E8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DE04861FD737490079D0E8 /* Interface.storyboard */; };
+		A9DE048A1FD737490079D0E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DE04891FD737490079D0E8 /* Assets.xcassets */; };
+		A9DE04911FD737490079D0E8 /* MyCookBook WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A9DE04901FD737490079D0E8 /* MyCookBook WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A9DE04961FD737490079D0E8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE04951FD737490079D0E8 /* InterfaceController.swift */; };
+		A9DE04981FD737490079D0E8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE04971FD737490079D0E8 /* ExtensionDelegate.swift */; };
+		A9DE049A1FD737490079D0E8 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE04991FD737490079D0E8 /* NotificationController.swift */; };
+		A9DE049C1FD737490079D0E8 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE049B1FD737490079D0E8 /* ComplicationController.swift */; };
+		A9DE049E1FD737490079D0E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DE049D1FD737490079D0E8 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9DE04791FD737490079D0E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9DE045C1FD737480079D0E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9DE04631FD737480079D0E8;
+			remoteInfo = MyCookBook;
+		};
+		A9DE04831FD737490079D0E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9DE045C1FD737480079D0E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9DE04801FD737490079D0E8;
+			remoteInfo = "MyCookBook WatchKit App";
+		};
+		A9DE04921FD737490079D0E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9DE045C1FD737480079D0E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9DE048F1FD737490079D0E8;
+			remoteInfo = "MyCookBook WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9DE04A61FD737490079D0E8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A9DE04911FD737490079D0E8 /* MyCookBook WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE04AA1FD737490079D0E8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A9DE04821FD737490079D0E8 /* MyCookBook WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A9DE04641FD737480079D0E8 /* MyCookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DE04671FD737480079D0E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9DE04691FD737480079D0E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9DE046C1FD737480079D0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9DE046E1FD737480079D0E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9DE04711FD737480079D0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9DE04731FD737480079D0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DE04781FD737490079D0E8 /* MyCookBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCookBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DE047C1FD737490079D0E8 /* MyCookBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCookBookTests.swift; sourceTree = "<group>"; };
+		A9DE047E1FD737490079D0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DE04811FD737490079D0E8 /* MyCookBook WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyCookBook WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DE04871FD737490079D0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A9DE04891FD737490079D0E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9DE048B1FD737490079D0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DE04901FD737490079D0E8 /* MyCookBook WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MyCookBook WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DE04951FD737490079D0E8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A9DE04971FD737490079D0E8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A9DE04991FD737490079D0E8 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A9DE049B1FD737490079D0E8 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A9DE049D1FD737490079D0E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9DE049F1FD737490079D0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DE04A01FD737490079D0E8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9DE04611FD737480079D0E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE04751FD737490079D0E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE048D1FD737490079D0E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9DE045B1FD737480079D0E8 = {
+			isa = PBXGroup;
+			children = (
+				A9DE04661FD737480079D0E8 /* MyCookBook */,
+				A9DE047B1FD737490079D0E8 /* MyCookBookTests */,
+				A9DE04851FD737490079D0E8 /* MyCookBook WatchKit App */,
+				A9DE04941FD737490079D0E8 /* MyCookBook WatchKit Extension */,
+				A9DE04651FD737480079D0E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9DE04651FD737480079D0E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE04641FD737480079D0E8 /* MyCookBook.app */,
+				A9DE04781FD737490079D0E8 /* MyCookBookTests.xctest */,
+				A9DE04811FD737490079D0E8 /* MyCookBook WatchKit App.app */,
+				A9DE04901FD737490079D0E8 /* MyCookBook WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9DE04661FD737480079D0E8 /* MyCookBook */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE04671FD737480079D0E8 /* AppDelegate.swift */,
+				A9DE04691FD737480079D0E8 /* ViewController.swift */,
+				A9DE046B1FD737480079D0E8 /* Main.storyboard */,
+				A9DE046E1FD737480079D0E8 /* Assets.xcassets */,
+				A9DE04701FD737480079D0E8 /* LaunchScreen.storyboard */,
+				A9DE04731FD737480079D0E8 /* Info.plist */,
+			);
+			path = MyCookBook;
+			sourceTree = "<group>";
+		};
+		A9DE047B1FD737490079D0E8 /* MyCookBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE047C1FD737490079D0E8 /* MyCookBookTests.swift */,
+				A9DE047E1FD737490079D0E8 /* Info.plist */,
+			);
+			path = MyCookBookTests;
+			sourceTree = "<group>";
+		};
+		A9DE04851FD737490079D0E8 /* MyCookBook WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE04861FD737490079D0E8 /* Interface.storyboard */,
+				A9DE04891FD737490079D0E8 /* Assets.xcassets */,
+				A9DE048B1FD737490079D0E8 /* Info.plist */,
+			);
+			path = "MyCookBook WatchKit App";
+			sourceTree = "<group>";
+		};
+		A9DE04941FD737490079D0E8 /* MyCookBook WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE04951FD737490079D0E8 /* InterfaceController.swift */,
+				A9DE04971FD737490079D0E8 /* ExtensionDelegate.swift */,
+				A9DE04991FD737490079D0E8 /* NotificationController.swift */,
+				A9DE049B1FD737490079D0E8 /* ComplicationController.swift */,
+				A9DE049D1FD737490079D0E8 /* Assets.xcassets */,
+				A9DE049F1FD737490079D0E8 /* Info.plist */,
+				A9DE04A01FD737490079D0E8 /* PushNotificationPayload.apns */,
+			);
+			path = "MyCookBook WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9DE04631FD737480079D0E8 /* MyCookBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9DE04AB1FD737490079D0E8 /* Build configuration list for PBXNativeTarget "MyCookBook" */;
+			buildPhases = (
+				A9DE04601FD737480079D0E8 /* Sources */,
+				A9DE04611FD737480079D0E8 /* Frameworks */,
+				A9DE04621FD737480079D0E8 /* Resources */,
+				A9DE04AA1FD737490079D0E8 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9DE04841FD737490079D0E8 /* PBXTargetDependency */,
+			);
+			name = MyCookBook;
+			productName = MyCookBook;
+			productReference = A9DE04641FD737480079D0E8 /* MyCookBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9DE04771FD737490079D0E8 /* MyCookBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9DE04AE1FD737490079D0E8 /* Build configuration list for PBXNativeTarget "MyCookBookTests" */;
+			buildPhases = (
+				A9DE04741FD737490079D0E8 /* Sources */,
+				A9DE04751FD737490079D0E8 /* Frameworks */,
+				A9DE04761FD737490079D0E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9DE047A1FD737490079D0E8 /* PBXTargetDependency */,
+			);
+			name = MyCookBookTests;
+			productName = MyCookBookTests;
+			productReference = A9DE04781FD737490079D0E8 /* MyCookBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9DE04801FD737490079D0E8 /* MyCookBook WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9DE04A71FD737490079D0E8 /* Build configuration list for PBXNativeTarget "MyCookBook WatchKit App" */;
+			buildPhases = (
+				A9DE047F1FD737490079D0E8 /* Resources */,
+				A9DE04A61FD737490079D0E8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9DE04931FD737490079D0E8 /* PBXTargetDependency */,
+			);
+			name = "MyCookBook WatchKit App";
+			productName = "MyCookBook WatchKit App";
+			productReference = A9DE04811FD737490079D0E8 /* MyCookBook WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A9DE048F1FD737490079D0E8 /* MyCookBook WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9DE04A31FD737490079D0E8 /* Build configuration list for PBXNativeTarget "MyCookBook WatchKit Extension" */;
+			buildPhases = (
+				A9DE048C1FD737490079D0E8 /* Sources */,
+				A9DE048D1FD737490079D0E8 /* Frameworks */,
+				A9DE048E1FD737490079D0E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MyCookBook WatchKit Extension";
+			productName = "MyCookBook WatchKit Extension";
+			productReference = A9DE04901FD737490079D0E8 /* MyCookBook WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9DE045C1FD737480079D0E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Guillaume Chieb bouares";
+				TargetAttributes = {
+					A9DE04631FD737480079D0E8 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					A9DE04771FD737490079D0E8 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9DE04631FD737480079D0E8;
+					};
+					A9DE04801FD737490079D0E8 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					A9DE048F1FD737490079D0E8 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A9DE045F1FD737480079D0E8 /* Build configuration list for PBXProject "MyCookBook" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9DE045B1FD737480079D0E8;
+			productRefGroup = A9DE04651FD737480079D0E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9DE04631FD737480079D0E8 /* MyCookBook */,
+				A9DE04771FD737490079D0E8 /* MyCookBookTests */,
+				A9DE04801FD737490079D0E8 /* MyCookBook WatchKit App */,
+				A9DE048F1FD737490079D0E8 /* MyCookBook WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9DE04621FD737480079D0E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DE04721FD737480079D0E8 /* LaunchScreen.storyboard in Resources */,
+				A9DE046F1FD737480079D0E8 /* Assets.xcassets in Resources */,
+				A9DE046D1FD737480079D0E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE04761FD737490079D0E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE047F1FD737490079D0E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DE048A1FD737490079D0E8 /* Assets.xcassets in Resources */,
+				A9DE04881FD737490079D0E8 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE048E1FD737490079D0E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DE049E1FD737490079D0E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9DE04601FD737480079D0E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DE046A1FD737480079D0E8 /* ViewController.swift in Sources */,
+				A9DE04681FD737480079D0E8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE04741FD737490079D0E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DE047D1FD737490079D0E8 /* MyCookBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE048C1FD737490079D0E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DE049A1FD737490079D0E8 /* NotificationController.swift in Sources */,
+				A9DE049C1FD737490079D0E8 /* ComplicationController.swift in Sources */,
+				A9DE04981FD737490079D0E8 /* ExtensionDelegate.swift in Sources */,
+				A9DE04961FD737490079D0E8 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9DE047A1FD737490079D0E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9DE04631FD737480079D0E8 /* MyCookBook */;
+			targetProxy = A9DE04791FD737490079D0E8 /* PBXContainerItemProxy */;
+		};
+		A9DE04841FD737490079D0E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9DE04801FD737490079D0E8 /* MyCookBook WatchKit App */;
+			targetProxy = A9DE04831FD737490079D0E8 /* PBXContainerItemProxy */;
+		};
+		A9DE04931FD737490079D0E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9DE048F1FD737490079D0E8 /* MyCookBook WatchKit Extension */;
+			targetProxy = A9DE04921FD737490079D0E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9DE046B1FD737480079D0E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9DE046C1FD737480079D0E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9DE04701FD737480079D0E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9DE04711FD737480079D0E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A9DE04861FD737490079D0E8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9DE04871FD737490079D0E8 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9DE04A11FD737490079D0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9DE04A21FD737490079D0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9DE04A41FD737490079D0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4GMNKX6R5;
+				INFOPLIST_FILE = "MyCookBook WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shemana.application.MyCookBook.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Debug;
+		};
+		A9DE04A51FD737490079D0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4GMNKX6R5;
+				INFOPLIST_FILE = "MyCookBook WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shemana.application.MyCookBook.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Release;
+		};
+		A9DE04A81FD737490079D0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4GMNKX6R5;
+				IBSC_MODULE = MyCookBook_WatchKit_Extension;
+				INFOPLIST_FILE = "MyCookBook WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shemana.application.MyCookBook.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Debug;
+		};
+		A9DE04A91FD737490079D0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4GMNKX6R5;
+				IBSC_MODULE = MyCookBook_WatchKit_Extension;
+				INFOPLIST_FILE = "MyCookBook WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shemana.application.MyCookBook.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Release;
+		};
+		A9DE04AC1FD737490079D0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4GMNKX6R5;
+				INFOPLIST_FILE = MyCookBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shemana.application.MyCookBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9DE04AD1FD737490079D0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4GMNKX6R5;
+				INFOPLIST_FILE = MyCookBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shemana.application.MyCookBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9DE04AF1FD737490079D0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4GMNKX6R5;
+				INFOPLIST_FILE = MyCookBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shemana.application.MyCookBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCookBook.app/MyCookBook";
+			};
+			name = Debug;
+		};
+		A9DE04B01FD737490079D0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4GMNKX6R5;
+				INFOPLIST_FILE = MyCookBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shemana.application.MyCookBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCookBook.app/MyCookBook";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9DE045F1FD737480079D0E8 /* Build configuration list for PBXProject "MyCookBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DE04A11FD737490079D0E8 /* Debug */,
+				A9DE04A21FD737490079D0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9DE04A31FD737490079D0E8 /* Build configuration list for PBXNativeTarget "MyCookBook WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DE04A41FD737490079D0E8 /* Debug */,
+				A9DE04A51FD737490079D0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9DE04A71FD737490079D0E8 /* Build configuration list for PBXNativeTarget "MyCookBook WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DE04A81FD737490079D0E8 /* Debug */,
+				A9DE04A91FD737490079D0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9DE04AB1FD737490079D0E8 /* Build configuration list for PBXNativeTarget "MyCookBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DE04AC1FD737490079D0E8 /* Debug */,
+				A9DE04AD1FD737490079D0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9DE04AE1FD737490079D0E8 /* Build configuration list for PBXNativeTarget "MyCookBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DE04AF1FD737490079D0E8 /* Debug */,
+				A9DE04B01FD737490079D0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9DE045C1FD737480079D0E8 /* Project object */;
+}

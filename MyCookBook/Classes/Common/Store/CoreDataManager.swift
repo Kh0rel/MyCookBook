@@ -1,0 +1,32 @@
+//
+//  CoreDataManager.swift
+//  MyCookBook
+//
+//  Created by Guillaume Chieb bouares on 11/12/2017.
+//  Copyright © 2017 Guillaume Chieb bouares. All rights reserved.
+//
+
+import Foundation
+import CoreData
+
+class CoreDataManager: NSObject {
+    
+    public static let shared = CoreDataManager()
+    
+    public var objectContext: NSManagedObjectContext?
+    
+    private override init(){
+        if let modelURL = Bundle.main.url(forResource: "firstCoreData", withExtension: "momd"){
+            if let model = NSManagedObjectModel(contentsOf: modelURL){
+                let persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: model)
+                _ = try? persistentStoreCoordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: FileManager.documentURL(childpath: "mysuper.db"), options: nil)
+                let context = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
+                context.persistentStoreCoordinator = persistentStoreCoordinator
+                self.objectContext = context
+            }
+            
+        }
+        
+    }
+    
+}

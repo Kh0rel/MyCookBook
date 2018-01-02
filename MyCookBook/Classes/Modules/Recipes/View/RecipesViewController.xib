@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecipesViewController" customModule="MyCookBook" customModuleProvider="target">
+            <connections>
+                <outlet property="noContentView" destination="HX6-nx-l1E" id="Xct-Z4-QsL"/>
+                <outlet property="tableview" destination="a4L-bW-nLn" id="VCq-uY-jsK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a4L-bW-nLn">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HX6-nx-l1E">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe_no_content" translatesAutoresizingMaskIntoConstraints="NO" id="lJI-PP-Wjy">
+                            <rect key="frame" x="67" y="135" width="240" height="240"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="lJI-PP-Wjy" secondAttribute="height" multiplier="1:1" id="Fnq-pg-fjE"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vous n'avez encore aucune recettes dans votre catalogue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXe-06-unc">
+                            <rect key="frame" x="20" y="400" width="335" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="OXe-06-unc" firstAttribute="top" secondItem="lJI-PP-Wjy" secondAttribute="bottom" constant="25" id="5sX-4D-eF0"/>
+                        <constraint firstItem="OXe-06-unc" firstAttribute="leading" secondItem="HX6-nx-l1E" secondAttribute="leading" constant="20" id="HzZ-qs-7Am"/>
+                        <constraint firstItem="lJI-PP-Wjy" firstAttribute="leading" secondItem="HX6-nx-l1E" secondAttribute="leading" constant="67" id="LYe-1M-oh5"/>
+                        <constraint firstAttribute="trailing" secondItem="OXe-06-unc" secondAttribute="trailing" constant="20" id="N9S-uA-D7R"/>
+                        <constraint firstItem="lJI-PP-Wjy" firstAttribute="centerX" secondItem="HX6-nx-l1E" secondAttribute="centerX" id="byW-Sa-d1e"/>
+                        <constraint firstItem="OXe-06-unc" firstAttribute="centerX" secondItem="HX6-nx-l1E" secondAttribute="centerX" id="pgc-JJ-ujY"/>
+                        <constraint firstItem="lJI-PP-Wjy" firstAttribute="centerY" secondItem="HX6-nx-l1E" secondAttribute="centerY" constant="-68.5" id="tm4-IM-DZi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a4L-bW-nLn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2vC-G6-Blu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a4L-bW-nLn" secondAttribute="trailing" id="3Ub-Md-DuU"/>
+                <constraint firstItem="HX6-nx-l1E" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="WLL-R4-Vsh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HX6-nx-l1E" secondAttribute="trailing" id="hiJ-i3-nrN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HX6-nx-l1E" secondAttribute="bottom" id="iJb-dz-JXK"/>
+                <constraint firstItem="a4L-bW-nLn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="m55-aO-jT7"/>
+                <constraint firstItem="HX6-nx-l1E" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mIJ-Ws-dHv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="a4L-bW-nLn" secondAttribute="bottom" id="otK-LA-fUx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="recipe_no_content" width="256" height="256"/>
+    </resources>
+</document>

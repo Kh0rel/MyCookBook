@@ -16,10 +16,10 @@ class CoreDataManager: NSObject {
     public var objectContext: NSManagedObjectContext?
     
     private override init(){
-        if let modelURL = Bundle.main.url(forResource: "firstCoreData", withExtension: "momd"){
+        if let modelURL = Bundle.main.url(forResource: "MyCookBook", withExtension: "momd"){
             if let model = NSManagedObjectModel(contentsOf: modelURL){
                 let persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: model)
-                _ = try? persistentStoreCoordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: FileManager.documentURL(childpath: "mysuper.db"), options: nil)
+                _ = try? persistentStoreCoordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: FileManager.documentURL(childpath: "MyCookBook.db"), options: nil)
                 let context = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
                 context.persistentStoreCoordinator = persistentStoreCoordinator
                 self.objectContext = context

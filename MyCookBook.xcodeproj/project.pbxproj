@@ -16,6 +16,10 @@
 		A94F43A31FFBB11400735A1E /* AddRecipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F43A21FFBB11400735A1E /* AddRecipeInteractor.swift */; };
 		A94F43A61FFBB12D00735A1E /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F43A41FFBB12D00735A1E /* AddRecipeViewController.swift */; };
 		A94F43A71FFBB12D00735A1E /* AddRecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94F43A51FFBB12D00735A1E /* AddRecipeViewController.xib */; };
+		A96E459E1FFD2482005AB56E /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E459C1FFD2482005AB56E /* ImageTableViewCell.swift */; };
+		A96E459F1FFD2482005AB56E /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96E459D1FFD2482005AB56E /* ImageTableViewCell.xib */; };
+		A96E45A21FFD34AD005AB56E /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E45A01FFD34AD005AB56E /* TextFieldTableViewCell.swift */; };
+		A96E45A31FFD34AD005AB56E /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96E45A11FFD34AD005AB56E /* TextFieldTableViewCell.xib */; };
 		A9DE04681FD737480079D0E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE04671FD737480079D0E8 /* AppDelegate.swift */; };
 		A9DE046D1FD737480079D0E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DE046B1FD737480079D0E8 /* Main.storyboard */; };
 		A9DE046F1FD737480079D0E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DE046E1FD737480079D0E8 /* Assets.xcassets */; };
@@ -108,6 +112,10 @@
 		A94F43A21FFBB11400735A1E /* AddRecipeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeInteractor.swift; sourceTree = "<group>"; };
 		A94F43A41FFBB12D00735A1E /* AddRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
 		A94F43A51FFBB12D00735A1E /* AddRecipeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRecipeViewController.xib; sourceTree = "<group>"; };
+		A96E459C1FFD2482005AB56E /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		A96E459D1FFD2482005AB56E /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		A96E45A01FFD34AD005AB56E /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		A96E45A11FFD34AD005AB56E /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
 		A9DE04641FD737480079D0E8 /* MyCookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DE04671FD737480079D0E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9DE046C1FD737480079D0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -212,6 +220,7 @@
 		A94F43811FFB781C00735A1E /* view */ = {
 			isa = PBXGroup;
 			children = (
+				A96E459B1FFD1480005AB56E /* recipes */,
 				A94F43821FFB788900735A1E /* BaseViewController.swift */,
 			);
 			name = view;
@@ -260,6 +269,17 @@
 				A94F439E1FFBB10100735A1E /* AddRecipeWireframe.swift */,
 			);
 			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		A96E459B1FFD1480005AB56E /* recipes */ = {
+			isa = PBXGroup;
+			children = (
+				A96E459C1FFD2482005AB56E /* ImageTableViewCell.swift */,
+				A96E459D1FFD2482005AB56E /* ImageTableViewCell.xib */,
+				A96E45A01FFD34AD005AB56E /* TextFieldTableViewCell.swift */,
+				A96E45A11FFD34AD005AB56E /* TextFieldTableViewCell.xib */,
+			);
+			path = recipes;
 			sourceTree = "<group>";
 		};
 		A9DE045B1FD737480079D0E8 = {
@@ -575,12 +595,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96E459F1FFD2482005AB56E /* ImageTableViewCell.xib in Resources */,
 				A9E706311FF3DA6D00271E67 /* RecipesViewController.xib in Resources */,
 				A9E7063B1FF3FA6600271E67 /* RecipesTableViewCell.xib in Resources */,
 				A94F43A71FFBB12D00735A1E /* AddRecipeViewController.xib in Resources */,
 				A9DE04721FD737480079D0E8 /* LaunchScreen.storyboard in Resources */,
 				A9DE046F1FD737480079D0E8 /* Assets.xcassets in Resources */,
 				A9DE046D1FD737480079D0E8 /* Main.storyboard in Resources */,
+				A96E45A31FFD34AD005AB56E /* TextFieldTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,6 +838,8 @@
 				A94F439F1FFBB10100735A1E /* AddRecipeWireframe.swift in Sources */,
 				A9DE04C21FDD78CD0079D0E8 /* FileManager+document.swift in Sources */,
 				A9DE04681FD737480079D0E8 /* AppDelegate.swift in Sources */,
+				A96E45A21FFD34AD005AB56E /* TextFieldTableViewCell.swift in Sources */,
+				A96E459E1FFD2482005AB56E /* ImageTableViewCell.swift in Sources */,
 				A9E7063A1FF3FA6600271E67 /* RecipesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

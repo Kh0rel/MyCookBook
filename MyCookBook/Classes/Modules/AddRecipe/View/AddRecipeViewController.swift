@@ -9,19 +9,15 @@
 import UIKit
 
 protocol AddRecipeViewInterface: class {
-    func showRecipeData(datas: [NSString])
-    func showIngredientsData(ingredients: [Ingredient])
-    func showStepsData(steps: [Step])
+
 }
 
 class AddRecipeViewController: UIViewController {
     
     static let recipeCellIdentifier = "recipeIdentifier"
     var presenter: AddRecipeModuleInterface!
-    var recipe = ["name": NSLocalizedString("Nom", comment: "Recipe name"),
-                            "describe": NSLocalizedString("Description",comment: "Recipe describe"),
-                            "difficulty" : NSLocalizedString("Difficulté", comment: "Recipe difficulty"),
-                            "picture": NSLocalizedString("Image", comment: "Recipe picture")]
+    
+    var recipe : [String] = []
     var ingredients : [Ingredient] = []
     var steps : [Step] = []
     var datas : NSDictionary = [:]
@@ -34,11 +30,20 @@ class AddRecipeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = NSLocalizedString("Ajouter une recette", comment: "Add recipe screen title")
+        
         recipeInformations.append(NSLocalizedString("Recette", comment: "Recipe informations"))
         recipeInformations.append(NSLocalizedString("Ingredients", comment: "Ingredients informations"))
         recipeInformations.append(NSLocalizedString("Etapes", comment: "Steps informations"))
         
-        self.recipeTableview.register(UINib(nibName: "RecipeTableViewCell", bundle:nil), forCellReuseIdentifier: AddRecipeViewController.recipeCellIdentifier)
+        recipe.append(NSLocalizedString("Nom", comment: "Recipe name"))
+        recipe.append(NSLocalizedString("Description", comment: "Recipe describe"))
+        recipe.append(NSLocalizedString("Difficulté", comment: "Recipe difficulty"))
+        recipe.append(NSLocalizedString("Image", comment: "Recipe picture"))
+
+
+
+        
+        self.recipeTableview.register(UINib(nibName: "TextFieldTableViewCell", bundle:nil), forCellReuseIdentifier: AddRecipeViewController.recipeCellIdentifier)
         
         self.recipeTableview.delegate = self
         self.recipeTableview.dataSource = self
@@ -57,18 +62,7 @@ class AddRecipeViewController: UIViewController {
 }
 
 extension AddRecipeViewController: AddRecipeViewInterface{
-    func showIngredientsData(ingredients: [Ingredient]) {
-        //self.ingredients = ingredients
-    }
-    
-    func showStepsData(steps: [Step]) {
-        //self.steps = steps
-    }
-    
-    func showRecipeData(datas: [NSString]){
-        self.datas = datas
-        self.recipeTableview.reloadData()
-    }
+
 }
 
 extension AddRecipeViewController: UITableViewDelegate{
@@ -76,23 +70,15 @@ extension AddRecipeViewController: UITableViewDelegate{
 }
 
 extension AddRecipeViewController: UITableViewDataSource{
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return self.recipeInformations[section]
-    }
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+                return self.recipe.count
+        }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return self.recipeInformations.count
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.datas.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = recipeTableview.dequeueReusableCell(withIdentifier: AddRecipeViewController.recipeCellIdentifier) as? TextFieldTableViewCell ?? TextFieldTableViewCell(style:.default, reuseIdentifier: AddRecipeViewController.recipeCellIdentifier)
-        cell.textLabel?.text = self.recipeInformations[indexPath.section]
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+                let cell = recipeTableview.dequeueReusableCell(withIdentifier: AddRecipeViewController.recipeCellIdentifier) as? TextFieldTableViewCell ?? TextFieldTableViewCell(style:.default, reuseIdentifier: AddRecipeViewController.recipeCellIdentifier)
         
-        //cell.titleLabel = self.datas[indexPath.row]
-        return cell
-    }
+            cell.titleLabel.text = self.recipe[indexPath.row]
+                return cell
+        }
+    
 }

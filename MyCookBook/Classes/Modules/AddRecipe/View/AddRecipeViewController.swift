@@ -14,7 +14,9 @@ protocol AddRecipeViewInterface: class {
 
 class AddRecipeViewController: UIViewController {
     
-    static let recipeCellIdentifier = "recipeIdentifier"
+    static let textCellIdentifier = "textIdentifier"
+    static let imageCellIdentifier = "imageIdentifier"
+    
     var presenter: AddRecipeModuleInterface!
     
     var recipe : [String] = []
@@ -40,11 +42,12 @@ class AddRecipeViewController: UIViewController {
         recipe.append(NSLocalizedString("Difficulté", comment: "Recipe difficulty"))
         recipe.append(NSLocalizedString("Image", comment: "Recipe picture"))
 
-
-
         
-        self.recipeTableview.register(UINib(nibName: "TextFieldTableViewCell", bundle:nil), forCellReuseIdentifier: AddRecipeViewController.recipeCellIdentifier)
+        self.recipeTableview.register(UINib(nibName: "TextFieldTableViewCell", bundle:nil), forCellReuseIdentifier: AddRecipeViewController.textCellIdentifier)
+        self.recipeTableview.register(UINib(nibName: "ImageTableViewCell", bundle:nil), forCellReuseIdentifier: AddRecipeViewController.imageCellIdentifier)
         
+        self.recipeTableview.rowHeight = UITableViewAutomaticDimension
+        self.recipeTableview.estimatedRowHeight = 500
         self.recipeTableview.delegate = self
         self.recipeTableview.dataSource = self
         // Do any additional setup after loading the view.
@@ -75,10 +78,25 @@ extension AddRecipeViewController: UITableViewDataSource{
         }
     
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-                let cell = recipeTableview.dequeueReusableCell(withIdentifier: AddRecipeViewController.recipeCellIdentifier) as? TextFieldTableViewCell ?? TextFieldTableViewCell(style:.default, reuseIdentifier: AddRecipeViewController.recipeCellIdentifier)
-        
-            cell.titleLabel.text = self.recipe[indexPath.row]
+            if indexPath.row == 3 {
+                let cell = recipeTableview.dequeueReusableCell(withIdentifier: AddRecipeViewController.imageCellIdentifier) as? ImageTableViewCell ?? ImageTableViewCell(style:.default, reuseIdentifier: AddRecipeViewController.imageCellIdentifier)
+                cell.recipeImage.image =  #imageLiteral(resourceName: "recipe_picture")
                 return cell
+            } /*else if indexPath.row == 4 {
+                let cell = recipeTableview.dequeueReusableCell(withIdentifier: "ingredientsCell", for: indexPath)
+                
+                // Configure the cell...
+                
+                cell.textLabel?.text = "Ingredients"
+                
+                return cell
+                
+            } */else {
+               let cell = recipeTableview.dequeueReusableCell(withIdentifier: AddRecipeViewController.textCellIdentifier) as? TextFieldTableViewCell ?? TextFieldTableViewCell(style:.default, reuseIdentifier: AddRecipeViewController.textCellIdentifier)
+                cell.titleLabel.text = self.recipe[indexPath.row]
+                return cell
+
+            }
         }
     
 }

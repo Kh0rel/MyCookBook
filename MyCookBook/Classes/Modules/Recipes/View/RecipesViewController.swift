@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import WatchConnectivity
+import CoreData
 
 protocol RecipesViewInterface: class {
     func showRecipesData(recipes: [Recipe])
@@ -41,6 +43,19 @@ class RecipesViewController: UIViewController {
         self.tableview.dataSource = self
         self.tableview.addSubview(self.refreshControl)
         // Do any additional setup after loading the view.
+        
+        
+        print("iphone app")
+        
+        if WCSession.isSupported(){
+            
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }
+        
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -94,4 +109,53 @@ extension RecipesViewController: UITableViewDataSource {
     }
     
     
+}
+
+extension RecipesViewController: WCSessionDelegate{
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        print("inactive")
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        print("inactive")
+    }
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        print("activation iphone OK")
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        print(message)
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        
+        if let context = CoreDataManager.shared.objectContext {
+            let request: NSFetchRequest<Recipe> = Recipe.fetchRequest()
+            if let recipes = try? context.fetch(request) {
+                var recipesWatch: [RecipeWatch] = []
+                
+                for recipe in recipes {
+                    var ingredientWatch: [IngredientWatch] = []
+
+                    let ingredients = recipe.ingredients?.allObjects as! [Ingredient];
+                    
+                    for ingredient in ingredients{
+                        ingredientWatch.append(IngredientWatch(name: ingredient.name, type: ingredient.type, weight: ingredient.weight))
+                    }
+                    
+                    let recipeWatch = RecipeWatch(describe: recipe.describe, difficulty: recipe.difficulty, name:recipe.name,ingredientsWatch:ingredientWatch)
+                    recipesWatch.append(recipeWatch)
+                }
+                
+                let encodedRecipes = try? JSONEncoder().encode(recipesWatch)
+                replyHandler(["recipeList":encodedRecipes ?? []])
+            } else {
+                replyHandler(["recipeList":[]])
+            }
+        } else {
+            replyHandler(["recipeList":[]])
+        }
+        
+    }
 }

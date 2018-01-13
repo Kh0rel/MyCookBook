@@ -41,6 +41,13 @@
 		A9E706371FF3E23800271E67 /* RecipesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E706361FF3E23800271E67 /* RecipesWireframe.swift */; };
 		A9E7063A1FF3FA6600271E67 /* RecipesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E706381FF3FA6600271E67 /* RecipesTableViewCell.swift */; };
 		A9E7063B1FF3FA6600271E67 /* RecipesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9E706391FF3FA6600271E67 /* RecipesTableViewCell.xib */; };
+		BF40E0A320010180003380B1 /* ListIngredientRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40E0A220010180003380B1 /* ListIngredientRowController.swift */; };
+		BF40E0A620010297003380B1 /* ListRecipeRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40E0A520010297003380B1 /* ListRecipeRowController.swift */; };
+		BF484567200A6260001428F1 /* RecipeWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF484566200A6260001428F1 /* RecipeWatch.swift */; };
+		BF484568200A689E001428F1 /* RecipeWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF484566200A6260001428F1 /* RecipeWatch.swift */; };
+		BF48456A200A6D77001428F1 /* IngredientWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF484569200A6D77001428F1 /* IngredientWatch.swift */; };
+		BF48456B200A70FA001428F1 /* IngredientWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF484569200A6D77001428F1 /* IngredientWatch.swift */; };
+		BF48456D200A7918001428F1 /* IngredientListInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF48456C200A7918001428F1 /* IngredientListInterfaceController.swift */; };
 		F8FD01BC981E6F032AF27B8E /* Pods_MyCookBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E807CAE3B509FA745F44685C /* Pods_MyCookBook.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,7 +107,6 @@
 		65E84DE717F178BCF37FB4A8 /* Pods_MyCookBookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCookBookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2F6C301696DFFA096FBB50 /* Pods-MyCookBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCookBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCookBook/Pods-MyCookBook.debug.xcconfig"; sourceTree = "<group>"; };
 		6F1039617A00E3604B2985D1 /* Pods_MyCookBook_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCookBook_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		872B4C1636004824167D59B6 /* Pods-MyCookBook WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCookBook WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCookBook WatchKit Extension/Pods-MyCookBook WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		A94F436B1FF6918F00735A1E /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
 		A94F43821FFB788900735A1E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A94F439E1FFBB10100735A1E /* AddRecipeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeWireframe.swift; sourceTree = "<group>"; };
@@ -141,7 +147,11 @@
 		A9E706361FF3E23800271E67 /* RecipesWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesWireframe.swift; sourceTree = "<group>"; };
 		A9E706381FF3FA6600271E67 /* RecipesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewCell.swift; sourceTree = "<group>"; };
 		A9E706391FF3FA6600271E67 /* RecipesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipesTableViewCell.xib; sourceTree = "<group>"; };
-		CD828BEF36F018A8E576B0B5 /* Pods-MyCookBook WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCookBook WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCookBook WatchKit Extension/Pods-MyCookBook WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		BF40E0A220010180003380B1 /* ListIngredientRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListIngredientRowController.swift; sourceTree = "<group>"; };
+		BF40E0A520010297003380B1 /* ListRecipeRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRecipeRowController.swift; sourceTree = "<group>"; };
+		BF484566200A6260001428F1 /* RecipeWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeWatch.swift; sourceTree = "<group>"; };
+		BF484569200A6D77001428F1 /* IngredientWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientWatch.swift; sourceTree = "<group>"; };
+		BF48456C200A7918001428F1 /* IngredientListInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListInterfaceController.swift; sourceTree = "<group>"; };
 		CE7D05086C08DBE3AC2A12D5 /* Pods-MyCookBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCookBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCookBook/Pods-MyCookBook.release.xcconfig"; sourceTree = "<group>"; };
 		E807CAE3B509FA745F44685C /* Pods_MyCookBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCookBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F499CFD38719E1DA4C969117 /* Pods-MyCookBookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCookBookTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCookBookTests/Pods-MyCookBookTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -190,8 +200,6 @@
 				CE7D05086C08DBE3AC2A12D5 /* Pods-MyCookBook.release.xcconfig */,
 				51C345AD9C05EE9CBC0F08B8 /* Pods-MyCookBook WatchKit App.debug.xcconfig */,
 				F6E7D171E9A8185BB5DCEA91 /* Pods-MyCookBook WatchKit App.release.xcconfig */,
-				872B4C1636004824167D59B6 /* Pods-MyCookBook WatchKit Extension.debug.xcconfig */,
-				CD828BEF36F018A8E576B0B5 /* Pods-MyCookBook WatchKit Extension.release.xcconfig */,
 				2EFF9B26C1BE303AA83A9962 /* Pods-MyCookBookTests.debug.xcconfig */,
 				F499CFD38719E1DA4C969117 /* Pods-MyCookBookTests.release.xcconfig */,
 			);
@@ -319,7 +327,9 @@
 		A9DE04941FD737490079D0E8 /* MyCookBook WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				BF40E0A420010248003380B1 /* ListController */,
 				A9DE04951FD737490079D0E8 /* InterfaceController.swift */,
+				BF48456C200A7918001428F1 /* IngredientListInterfaceController.swift */,
 				A9DE04971FD737490079D0E8 /* ExtensionDelegate.swift */,
 				A9DE04991FD737490079D0E8 /* NotificationController.swift */,
 				A9DE049B1FD737490079D0E8 /* ComplicationController.swift */,
@@ -373,6 +383,7 @@
 		A9DE04C91FDE81E40079D0E8 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				BF484565200A623E001428F1 /* WatchModel */,
 				A9DE04B11FDD69CC0079D0E8 /* MyCookBook.xcdatamodeld */,
 				A9DE04CA1FDE82090079D0E8 /* CoreDataManager.swift */,
 			);
@@ -432,6 +443,24 @@
 				A9E706341FF3DF5B00271E67 /* RecipesInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BF40E0A420010248003380B1 /* ListController */ = {
+			isa = PBXGroup;
+			children = (
+				BF40E0A220010180003380B1 /* ListIngredientRowController.swift */,
+				BF40E0A520010297003380B1 /* ListRecipeRowController.swift */,
+			);
+			path = ListController;
+			sourceTree = "<group>";
+		};
+		BF484565200A623E001428F1 /* WatchModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF484566200A6260001428F1 /* RecipeWatch.swift */,
+				BF484569200A6D77001428F1 /* IngredientWatch.swift */,
+			);
+			path = WatchModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -504,12 +533,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9DE04A31FD737490079D0E8 /* Build configuration list for PBXNativeTarget "MyCookBook WatchKit Extension" */;
 			buildPhases = (
-				5114C4761554C3BE3B4DBB1C /* [CP] Check Pods Manifest.lock */,
 				A9DE048C1FD737490079D0E8 /* Sources */,
 				A9DE048D1FD737490079D0E8 /* Frameworks */,
 				A9DE048E1FD737490079D0E8 /* Resources */,
-				73DF110E909DCB30406A4FAB /* [CP] Embed Pods Frameworks */,
-				D983949688D45C534F642571 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -611,24 +637,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5114C4761554C3BE3B4DBB1C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MyCookBook WatchKit Extension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		53E2F74ACC2642E00E22FEDA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -678,24 +686,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyCookBookTests/Pods-MyCookBookTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		73DF110E909DCB30406A4FAB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MyCookBook WatchKit Extension/Pods-MyCookBook WatchKit Extension-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyCookBook WatchKit Extension/Pods-MyCookBook WatchKit Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		82F9AFABFDD357F30C7788AC /* [CP] Copy Pods Resources */ = {
@@ -779,21 +769,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyCookBook/Pods-MyCookBook-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D983949688D45C534F642571 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyCookBook WatchKit Extension/Pods-MyCookBook WatchKit Extension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -808,10 +783,12 @@
 				A9DE04C51FDD79070079D0E8 /* DataManager.swift in Sources */,
 				A94F43831FFB788A00735A1E /* BaseViewController.swift in Sources */,
 				A94F43A11FFBB10B00735A1E /* AddRecipePresenter.swift in Sources */,
+				BF48456A200A6D77001428F1 /* IngredientWatch.swift in Sources */,
 				A9E706331FF3DBFB00271E67 /* RecipesPresenter.swift in Sources */,
 				A94F43A61FFBB12D00735A1E /* AddRecipeViewController.swift in Sources */,
 				A9E706371FF3E23800271E67 /* RecipesWireframe.swift in Sources */,
 				A94F43A31FFBB11400735A1E /* AddRecipeInteractor.swift in Sources */,
+				BF484567200A6260001428F1 /* RecipeWatch.swift in Sources */,
 				A94F436C1FF6918F00735A1E /* RootWireframe.swift in Sources */,
 				A94F439F1FFBB10100735A1E /* AddRecipeWireframe.swift in Sources */,
 				A9DE04C21FDD78CD0079D0E8 /* FileManager+document.swift in Sources */,
@@ -832,9 +809,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF48456D200A7918001428F1 /* IngredientListInterfaceController.swift in Sources */,
+				BF48456B200A70FA001428F1 /* IngredientWatch.swift in Sources */,
+				BF40E0A320010180003380B1 /* ListIngredientRowController.swift in Sources */,
 				A9DE049A1FD737490079D0E8 /* NotificationController.swift in Sources */,
 				A9DE049C1FD737490079D0E8 /* ComplicationController.swift in Sources */,
 				A9DE04981FD737490079D0E8 /* ExtensionDelegate.swift in Sources */,
+				BF40E0A620010297003380B1 /* ListRecipeRowController.swift in Sources */,
+				BF484568200A689E001428F1 /* RecipeWatch.swift in Sources */,
 				A9DE04961FD737490079D0E8 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -996,7 +978,6 @@
 		};
 		A9DE04A41FD737490079D0E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 872B4C1636004824167D59B6 /* Pods-MyCookBook WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -1015,7 +996,6 @@
 		};
 		A9DE04A51FD737490079D0E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD828BEF36F018A8E576B0B5 /* Pods-MyCookBook WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;

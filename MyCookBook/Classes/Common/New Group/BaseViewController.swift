@@ -15,26 +15,20 @@ class BaseViewController: UITabBarController {
         super.viewDidLoad()
         self.delegate = self
         
-        if let context = CoreDataManager.shared.objectContext {
-            let recipe = Recipe(context: context)
-            recipe.name = "Test3"
-            recipe.describe = "2 test aeizje aizhbe ihabqsdihbaz ibdziebf iqpubfliq jzdkbsflzhakebf iqzlkdbf ialezkbfai zelkhbfizeklqb fizqelkfb zekpjfb izeqklbf aizeok bfijl"
-            recipe.difficulty = 4
-            
-            let ingredient = Ingredient(context: context)
-            ingredient.name = "Pomme"
-            ingredient.type = "Fruits"
-            ingredient.weight = 15
-            
-            recipe.addToIngredients(ingredient)
-            
-            ingredient.name = "Poire"
-            ingredient.type = "Fruits"
-            ingredient.weight = 50
-            recipe.addToIngredients(ingredient)
-            
-            try? context.save()
-        }
+//        if let context = CoreDataManager.shared.objectContext {
+//            let recipe = Recipe(context: context)
+//            recipe.name = "Test3"
+//            recipe.describe = "2 test aeizje aizhbe ihabqsdihbaz ibdziebf iqpubfliq jzdkbsflzhakebf iqzlkdbf ialezkbfai zelkhbfizeklqb fizqelkfb zekpjfb izeqklbf aizeok bfijl"
+//            recipe.difficulty = 4
+//
+//            let ingredient = Ingredient(context: context)
+//            ingredient.name = "Poire"
+//            ingredient.type = "Fruits"
+//            ingredient.weight = 50
+//            recipe.addToIngredients(ingredient)
+//
+//            try? context.save()
+//        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -66,8 +66,10 @@ class InterfaceController: WKInterfaceController{
         super.didDeactivate()
     }
     
-    
-    
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        self.pushController(withName: "ingredientListController", context: recipes[rowIndex].ingredientsWatch)
+    }
+   
 }
 
 extension InterfaceController: WCSessionDelegate{

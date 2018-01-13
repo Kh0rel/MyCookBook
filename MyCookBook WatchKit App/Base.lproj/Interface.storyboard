@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Ingredient List Interface Controller-->
+        <!--ingredientListController-->
         <scene sceneID="g5h-ud-di9">
             <objects>
-                <controller id="Bl5-gS-bVe" customClass="IngredientListInterfaceController" customModule="MyCookBook_WatchKit_Extension">
+                <controller identifier="ingredientListController" id="Bl5-gS-bVe" customClass="IngredientListInterfaceController" customModule="MyCookBook_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="Qk9-2N-dqJ">
                             <items>

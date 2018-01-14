@@ -16,6 +16,9 @@ class AddRecipeViewController: UIViewController {
     
     static let textCellIdentifier = "textIdentifier"
     static let imageCellIdentifier = "imageIdentifier"
+    static let sectionCellIdentifier = "sectionIdentifier"
+    static let ingredientCellIdentifier = "ingredientIdentifier"
+    static let stepCellIdentifier = "stepIdentifier"
     
     var presenter: AddRecipeModuleInterface!
     
@@ -33,18 +36,20 @@ class AddRecipeViewController: UIViewController {
         super.viewDidLoad()
         self.title = NSLocalizedString("Ajouter une recette", comment: "Add recipe screen title")
         
-        recipeInformations.append(NSLocalizedString("Recette", comment: "Recipe informations"))
-        recipeInformations.append(NSLocalizedString("Ingredients", comment: "Ingredients informations"))
-        recipeInformations.append(NSLocalizedString("Etapes", comment: "Steps informations"))
         
+        recipe.append(NSLocalizedString("Recette", comment: "Recipe informations"))
         recipe.append(NSLocalizedString("Nom", comment: "Recipe name"))
         recipe.append(NSLocalizedString("Description", comment: "Recipe describe"))
         recipe.append(NSLocalizedString("Difficulté", comment: "Recipe difficulty"))
         recipe.append(NSLocalizedString("Image", comment: "Recipe picture"))
+        recipe.append(NSLocalizedString("Ingredients", comment: "Ingredients informations"))
 
         
         self.recipeTableview.register(UINib(nibName: "TextFieldTableViewCell", bundle:nil), forCellReuseIdentifier: AddRecipeViewController.textCellIdentifier)
         self.recipeTableview.register(UINib(nibName: "ImageTableViewCell", bundle:nil), forCellReuseIdentifier: AddRecipeViewController.imageCellIdentifier)
+        self.recipeTableview.register(UINib(nibName:"SectionTableViewCell", bundle: nil), forCellReuseIdentifier: AddRecipeViewController.sectionCellIdentifier)
+        self.recipeTableview.register(UINib(nibName:"IngredientTableViewCell", bundle: nil), forCellReuseIdentifier: AddRecipeViewController.ingredientCellIdentifier)
+        self.recipeTableview.register(UINib(nibName:"StepTableViewCell", bundle: nil), forCellReuseIdentifier: AddRecipeViewController.stepCellIdentifier)
         
         self.recipeTableview.rowHeight = UITableViewAutomaticDimension
         self.recipeTableview.estimatedRowHeight = 500
@@ -82,16 +87,17 @@ extension AddRecipeViewController: UITableViewDataSource{
                 let cell = recipeTableview.dequeueReusableCell(withIdentifier: AddRecipeViewController.imageCellIdentifier) as? ImageTableViewCell ?? ImageTableViewCell(style:.default, reuseIdentifier: AddRecipeViewController.imageCellIdentifier)
                 cell.recipeImage.image =  #imageLiteral(resourceName: "recipe_picture")
                 return cell
-            } /*else if indexPath.row == 4 {
-                let cell = recipeTableview.dequeueReusableCell(withIdentifier: "ingredientsCell", for: indexPath)
+            } else if self.recipe[indexPath.row] == "Recette" || self.recipe[indexPath.row] == "Ingredients" ||
+                self.recipe[indexPath.row] == "Etapes" {
+                let cell =  recipeTableview.dequeueReusableCell(withIdentifier: AddRecipeViewController.sectionCellIdentifier) as? SectionTableViewCell ?? SectionTableViewCell(style:.default, reuseIdentifier: AddRecipeViewController.sectionCellIdentifier)
                 
                 // Configure the cell...
                 
-                cell.textLabel?.text = "Ingredients"
+                cell.textLabel?.text = self.recipe[indexPath.row]
                 
                 return cell
                 
-            } */else {
+            } else {
                let cell = recipeTableview.dequeueReusableCell(withIdentifier: AddRecipeViewController.textCellIdentifier) as? TextFieldTableViewCell ?? TextFieldTableViewCell(style:.default, reuseIdentifier: AddRecipeViewController.textCellIdentifier)
                 cell.titleLabel.text = self.recipe[indexPath.row]
                 return cell

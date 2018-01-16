@@ -64,7 +64,7 @@
             <connections>
                 <outlet property="recipeImage" destination="B8v-7h-8w4" id="sJZ-wo-3PK"/>
             </connections>
-            <point key="canvasLocation" x="61" y="108.5"/>
+            <point key="canvasLocation" x="209" y="140"/>
         </tableViewCell>
     </objects>
 </document>

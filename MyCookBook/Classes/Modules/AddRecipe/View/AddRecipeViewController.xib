@@ -10,26 +10,36 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddRecipeViewController" customModule="MyCookBook" customModuleProvider="target">
-            <connections>
-                <outlet property="recipeTableview" destination="dWu-NT-gX4" id="gbh-H3-Qv8"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddRecipeViewController" customModule="MyCookBook" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dWu-NT-gX4">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="klW-hA-8aY">
+                    <rect key="frame" x="63.5" y="60" width="248" height="29"/>
+                    <segments>
+                        <segment title="Info"/>
+                        <segment title="Ingredients"/>
+                        <segment title="Steps"/>
+                    </segments>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xe-kH-oAe">
+                    <rect key="frame" x="0.0" y="98" width="375" height="569"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </tableView>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1xe-kH-oAe" firstAttribute="top" secondItem="klW-hA-8aY" secondAttribute="bottom" constant="10" id="3oI-xS-fLx"/>
+                <constraint firstItem="1xe-kH-oAe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FD0-Zf-cDk"/>
+                <constraint firstItem="klW-hA-8aY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ici-nu-8eV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1xe-kH-oAe" secondAttribute="bottom" id="Txo-eU-zIm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1xe-kH-oAe" secondAttribute="trailing" id="hEo-1g-Jqr"/>
+                <constraint firstItem="klW-hA-8aY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="z7S-el-wKC"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="33.5" y="68.5"/>
+            <point key="canvasLocation" x="34" y="60"/>
         </view>
     </objects>
 </document>

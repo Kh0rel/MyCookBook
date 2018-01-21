@@ -43,7 +43,7 @@ extension RecipesWireframe: RecipesWireframeInput {
     func presentAddInterfaceForRecipes() {
         let addRecipeViewController = AddRecipeWireframe.assembleModule()
         
-        self.recipesViewController.navigationController?.pushViewController(addRecipeViewController, animated: true)
+    self.recipesViewController.navigationController?.pushViewController(addRecipeViewController, animated: true)
     }
     
     func presentDetailsInterfaceForRecipes(recipe: Recipe) {

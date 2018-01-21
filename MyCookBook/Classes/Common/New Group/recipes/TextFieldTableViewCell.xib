@@ -41,6 +41,7 @@
                     <constraint firstItem="JQl-fn-pPj" firstAttribute="leading" secondItem="Jtj-b3-CwR" secondAttribute="trailing" constant="16" id="iAk-gi-HAP"/>
                 </constraints>
             </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="TextFieldTableViewCell"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="textField" destination="JQl-fn-pPj" id="qso-HR-Khd"/>

@@ -7,10 +7,13 @@
 //
 
 import Foundation
-
+import UIKit
 protocol AddRecipeModuleInterface: class {
     func updateView()
-    func showRecipes()
+    func setSteps(steps:[Step])
+    func setIngredients(ingredients:[Ingredient])
+    func setRecipeMainInfo(name:String,describe:String,difficulty:Double?,image:UIImage?)
+    func saveRecipe()
 }
 
 protocol AddRecipeInteractorOutput: class {
@@ -24,15 +27,38 @@ class AddRecipePresenter {
     var interactor: AddRecipeInteractorInput!
     var wireframe: AddRecipeWireframe!
     
+    var recipe: Recipe?
+    
 }
 
 extension AddRecipePresenter: AddRecipeModuleInterface {
-    func updateView() {
+    func setRecipeMainInfo(name: String, describe: String, difficulty: Double?, image: UIImage?) {
+        self.recipe?.name = name
+        self.recipe?.describe = describe
+        self.recipe?.difficulty = difficulty ?? 0.0
+        self.recipe?.picture = UIImagePNGRepresentation(image!) ?? UIImagePNGRepresentation(#imageLiteral(resourceName: "recipe_picture"))
+    }
+    
+    func setIngredients(ingredients: [Ingredient]) {
         
+    }
+    
+    func updateView() {
+       self.recipe = interactor.createRecipe()
     }
     
     func showRecipes() {
         
+    }
+    
+    func setSteps(steps: [Step]) {
+        for step in steps {
+            self.recipe?.addToSteps(step)
+        }
+    }
+    
+    func saveRecipe() {
+        self.interactor.persistRecipe(needTo: self.recipe!)
     }
 }
 

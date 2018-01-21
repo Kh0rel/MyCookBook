@@ -14,6 +14,7 @@ protocol ImageTableViewCellDelegate {
 
 class ImageTableViewCell: UITableViewCell {
 
+    static let cellIdentifier: String = "ImageTableviewCell"
     @IBOutlet weak var recipeImage: UIImageView!
     var delegate: ImageTableViewCellDelegate!
     override func awakeFromNib() {

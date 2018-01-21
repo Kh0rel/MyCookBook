@@ -8,8 +8,33 @@
 
 import UIKit
 
+
 class StepTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var stepNumber: UITextField!
+    @IBOutlet weak var stepDesrcription: UITextField!
+    @IBOutlet weak var stepTime: UITextField!
+    
+    var step: Step! {
+        didSet {
+            stepNumber.text = step.name ?? ""
+            stepDesrcription.text = step.describe ?? ""
+            stepTime.text = step.duration?.stringValue ?? ""
+        }
+    }
+    
+    var modifiedStep: Step {
+        get {
+            let step = Step(context: CoreDataManager.shared.objectContext!)
+            step.name = stepNumber.text
+            step.describe = stepDesrcription.text
+            let formatter = NumberFormatter()
+            formatter.generatesDecimalNumbers = true
+            step.duration = formatter.number(from: stepTime.text!) as? NSDecimalNumber ?? 0
+            
+            return step
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,7 +49,6 @@ class StepTableViewCell: UITableViewCell {
 }
 
 extension StepTableViewCell: UITextFieldDelegate {
-    
     
 }
 

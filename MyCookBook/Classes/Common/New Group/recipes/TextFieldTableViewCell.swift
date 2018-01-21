@@ -9,6 +9,8 @@
 import UIKit
 
 class TextFieldTableViewCell: UITableViewCell {
+    
+    static let cellIdentifier: String = "TextFieldTableViewCell"
 
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var titleLabel: UILabel!

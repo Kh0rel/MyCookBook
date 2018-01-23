@@ -26,7 +26,9 @@ extension AddRecipeInteractor: AddRecipeInteractorInput {
     }
     
     func persistRecipe(needTo bePersist: Recipe) {
-        
+        if let context = CoreDataManager.shared.objectContext {
+            try? context.save()
+        }
     }
     
     

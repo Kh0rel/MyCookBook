@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="EZl-SC-1Od" customClass="StepTableViewCell" customModule="MyCookBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EZl-SC-1Od" id="4Z3-hu-8d8">
+                <rect key="frame" x="0.0" y="0.0" width="408" height="130.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nom  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpd-O7-mqt">
+                        <rect key="frame" x="25" y="16" width="46" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xfR-ym-m34">
+                        <rect key="frame" x="91" y="11" width="297" height="30"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2xw-Nn-Pej">
+                        <rect key="frame" x="121" y="51" width="267" height="30"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temps (sec)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCk-3Z-7XC">
+                        <rect key="frame" x="25" y="93" width="95" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gjJ-HO-4x9">
+                        <rect key="frame" x="140" y="88" width="248" height="30"/>
+                        <accessibility key="accessibilityConfiguration" identifier="time"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBj-cX-1Nu">
+                        <rect key="frame" x="25" y="54" width="88" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2xw-Nn-Pej" firstAttribute="trailing" secondItem="xfR-ym-m34" secondAttribute="trailing" id="7gt-4N-VlE"/>
+                    <constraint firstItem="bCk-3Z-7XC" firstAttribute="centerY" secondItem="gjJ-HO-4x9" secondAttribute="centerY" id="Fgv-2Y-hQt"/>
+                    <constraint firstItem="2xw-Nn-Pej" firstAttribute="leading" secondItem="SBj-cX-1Nu" secondAttribute="trailing" constant="8" symbolic="YES" id="IjY-Zr-XHN"/>
+                    <constraint firstItem="gjJ-HO-4x9" firstAttribute="leading" secondItem="bCk-3Z-7XC" secondAttribute="trailing" constant="20" id="PzL-6i-tEd"/>
+                    <constraint firstItem="gjJ-HO-4x9" firstAttribute="top" secondItem="2xw-Nn-Pej" secondAttribute="bottom" constant="7" id="TdF-Lf-8Qs"/>
+                    <constraint firstItem="bCk-3Z-7XC" firstAttribute="leading" secondItem="Xpd-O7-mqt" secondAttribute="leading" id="U2W-Fy-8NN"/>
+                    <constraint firstItem="xfR-ym-m34" firstAttribute="centerY" secondItem="Xpd-O7-mqt" secondAttribute="centerY" id="d1H-lV-NOq"/>
+                    <constraint firstItem="SBj-cX-1Nu" firstAttribute="leading" secondItem="Xpd-O7-mqt" secondAttribute="leading" id="grk-jr-uqg"/>
+                    <constraint firstItem="2xw-Nn-Pej" firstAttribute="trailing" secondItem="gjJ-HO-4x9" secondAttribute="trailing" id="gsf-x4-KB9"/>
+                    <constraint firstItem="2xw-Nn-Pej" firstAttribute="centerY" secondItem="4Z3-hu-8d8" secondAttribute="centerY" id="i7a-mf-TVF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gjJ-HO-4x9" secondAttribute="trailing" id="onY-Md-1HN"/>
+                    <constraint firstItem="bCk-3Z-7XC" firstAttribute="leading" secondItem="4Z3-hu-8d8" secondAttribute="leadingMargin" constant="5" id="q8U-mi-XdJ"/>
+                    <constraint firstItem="2xw-Nn-Pej" firstAttribute="baseline" secondItem="SBj-cX-1Nu" secondAttribute="baseline" id="sQO-Tw-gHp"/>
+                    <constraint firstItem="xfR-ym-m34" firstAttribute="leading" secondItem="Xpd-O7-mqt" secondAttribute="trailing" constant="20" id="zOX-q3-Mjr"/>
+                    <constraint firstItem="Xpd-O7-mqt" firstAttribute="top" secondItem="4Z3-hu-8d8" secondAttribute="topMargin" constant="5" id="zTa-kj-phN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="WVO-wY-vHp"/>
+            <connections>
+                <outlet property="stepDesrcription" destination="2xw-Nn-Pej" id="YuN-mx-n7m"/>
+                <outlet property="stepNumber" destination="xfR-ym-m34" id="Q74-jn-MA4"/>
+                <outlet property="stepTime" destination="gjJ-HO-4x9" id="ogv-hb-7Da"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="-59.5"/>
+        </tableViewCell>
+    </objects>
+</document>

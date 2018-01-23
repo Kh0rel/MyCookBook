@@ -25,7 +25,6 @@ class StepTableViewCell: UITableViewCell {
     
     var modifiedStep: Step {
         get {
-            let step = Step(context: CoreDataManager.shared.objectContext!)
             step.name = stepNumber.text
             step.describe = stepDesrcription.text
             let formatter = NumberFormatter()

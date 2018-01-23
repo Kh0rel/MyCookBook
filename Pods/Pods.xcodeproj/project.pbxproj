@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -56,25 +56,25 @@
 		25B96D5532F59092567FA7224E36F735 /* Pods-MyCookBook-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyCookBook-frameworks.sh"; sourceTree = "<group>"; };
 		2982074DB82ADB935394866632262831 /* Pods-MyCookBookTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyCookBookTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		2C71D3F43D618410BD81731A8A347DA3 /* CosmosText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosText.swift; path = Cosmos/CosmosText.swift; sourceTree = "<group>"; };
-		2E3EC0C96ED3EF397A8A7DD5798F515E /* Pods-MyCookBookTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyCookBookTests.modulemap"; sourceTree = "<group>"; };
+		2E3EC0C96ED3EF397A8A7DD5798F515E /* Pods-MyCookBookTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MyCookBookTests.modulemap"; sourceTree = "<group>"; };
 		30AA96AB6F86E13270A3AC50E35D6FDB /* Pods-MyCookBook WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyCookBook WatchKit App-umbrella.h"; sourceTree = "<group>"; };
 		44643B74E3EBEB9AAF29F30D664A853D /* Pods-MyCookBookTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyCookBookTests-resources.sh"; sourceTree = "<group>"; };
 		4D15BDC7E171ADBE52508D1607F1206F /* Pods-MyCookBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyCookBook.debug.xcconfig"; sourceTree = "<group>"; };
 		4EA9B31382A3AF0B9E94CF2F6D693218 /* CosmosLocalizedRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLocalizedRating.swift; path = Cosmos/CosmosLocalizedRating.swift; sourceTree = "<group>"; };
 		52E8E22FE9B004F3BA5B9B5C1DDED8D1 /* Pods-MyCookBookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyCookBookTests.release.xcconfig"; sourceTree = "<group>"; };
 		5AD27BA829DD50F3926FA8440016FB97 /* Pods-MyCookBook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyCookBook-dummy.m"; sourceTree = "<group>"; };
-		5B52B9C6B41B9415867DA5D870173994 /* Pods-MyCookBook.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyCookBook.modulemap"; sourceTree = "<group>"; };
+		5B52B9C6B41B9415867DA5D870173994 /* Pods-MyCookBook.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MyCookBook.modulemap"; sourceTree = "<group>"; };
 		61DEB4B2E35F958C581816FAB667C45E /* Pods-MyCookBookTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyCookBookTests-frameworks.sh"; sourceTree = "<group>"; };
 		65B3636F597662074A081AEEC38637E0 /* CosmosSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSettings.swift; path = Cosmos/CosmosSettings.swift; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6657401C1E955A10E8FF450A794B55FF /* Pods_MyCookBookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCookBookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6657401C1E955A10E8FF450A794B55FF /* Pods_MyCookBookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyCookBookTests.framework; path = "Pods-MyCookBookTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE20D56F60E8D350D1BB2F6FC662E2A /* Pods-MyCookBook WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyCookBook WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		7CCF2EDF19A67622668B97AD87E3287A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82295373A8D579D6E3478EC26D0AA00D /* CosmosRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosRating.swift; path = Cosmos/CosmosRating.swift; sourceTree = "<group>"; };
 		830ADF0C1BB53A7C09389398AA5F5558 /* CosmosTouch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouch.swift; path = Cosmos/CosmosTouch.swift; sourceTree = "<group>"; };
 		88179D8C99776E246F256BA44D5C0D90 /* StarFillMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarFillMode.swift; path = Cosmos/StarFillMode.swift; sourceTree = "<group>"; };
 		89BBCB771F13B0C0E53F6A071BE347C6 /* CosmosLayers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayers.swift; path = Cosmos/CosmosLayers.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93ABB3765650191E4BD244BB7DE5DECB /* Cosmos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cosmos-dummy.m"; sourceTree = "<group>"; };
 		94A0A6E8C163C0570496E03126DC967F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95398BBBF4400DF23411A9F447CC5777 /* CosmosView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosView.swift; path = Cosmos/CosmosView.swift; sourceTree = "<group>"; };
@@ -83,10 +83,10 @@
 		9A0BB979992E0878F1ADD2D1906B45FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9ABF2B1EC8350A480DBBC4D5F2858E99 /* StarLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarLayer.swift; path = Cosmos/StarLayer.swift; sourceTree = "<group>"; };
 		9B016ACC85EEF4C09073267F50E661A6 /* Pods-MyCookBook-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyCookBook-umbrella.h"; sourceTree = "<group>"; };
-		9C0D8A9328C79F65295016B8F0D955AA /* Pods_MyCookBook_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCookBook_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0D8A9328C79F65295016B8F0D955AA /* Pods_MyCookBook_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyCookBook_WatchKit_App.framework; path = "Pods-MyCookBook WatchKit App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55B4CF95B64EF6E9FDD8F8C383A06C0 /* Cosmos-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-prefix.pch"; sourceTree = "<group>"; };
-		A581B93DE89DA297080D477189D691FE /* Pods-MyCookBook WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyCookBook WatchKit App.modulemap"; sourceTree = "<group>"; };
-		B95B9C1F76C1ADF1DC09070C8523BC5C /* Pods_MyCookBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCookBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A581B93DE89DA297080D477189D691FE /* Pods-MyCookBook WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MyCookBook WatchKit App.modulemap"; sourceTree = "<group>"; };
+		B95B9C1F76C1ADF1DC09070C8523BC5C /* Pods_MyCookBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyCookBook.framework; path = "Pods-MyCookBook.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D73CA97192A87393FEB52411835704 /* Cosmos.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cosmos.xcconfig; sourceTree = "<group>"; };
 		C50243754E2A63FD8FA7419AD7BBB660 /* Pods-MyCookBookTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyCookBookTests-dummy.m"; sourceTree = "<group>"; };
 		CB91290D2F58905F1C16FB76664AF000 /* Pods-MyCookBook-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyCookBook-resources.sh"; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		D7BC4660B49A63D6668E8B735D9B1B47 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D894308829CBFFDC7CD8D6E1A0828C84 /* Pods-MyCookBookTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyCookBookTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DB84A1F4BC61DDA3539D1B2B1C8D0D73 /* Pods-MyCookBook-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyCookBook-acknowledgements.plist"; sourceTree = "<group>"; };
-		DC1D60A91B7FA94B609C00AE1055D078 /* Cosmos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Cosmos.modulemap; sourceTree = "<group>"; };
+		DC1D60A91B7FA94B609C00AE1055D078 /* Cosmos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Cosmos.modulemap; sourceTree = "<group>"; };
 		DC875F86AB0C986A9D6E42FEDDCA351F /* Pods-MyCookBook WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyCookBook WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		DE37A954C2DE16B03AC3BC5A73316B16 /* Pods-MyCookBook WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyCookBook WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
 		E244AAE34C2B01D85E8112D23347B3CC /* CosmosAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosAccessibility.swift; path = Cosmos/CosmosAccessibility.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		E66C1DC21C77051C649F2F7BAE4F40F5 /* Pods-MyCookBook-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyCookBook-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EA9DDDD7CB951DBAFC74C23EAE35E5DD /* CosmosLayerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayerHelper.swift; path = Cosmos/CosmosLayerHelper.swift; sourceTree = "<group>"; };
 		F296F802EB648AD6BE34D5C93AD0133F /* RightToLeft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RightToLeft.swift; path = Cosmos/Helpers/RightToLeft.swift; sourceTree = "<group>"; };
-		FA7467C9EE123BED259D3532F0B3BC21 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7467C9EE123BED259D3532F0B3BC21 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cosmos.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +173,7 @@
 				9ABF2B1EC8350A480DBBC4D5F2858E99 /* StarLayer.swift */,
 				65CDB5A775ADB78010B62ED1DDDE658B /* Support Files */,
 			);
+			name = Cosmos;
 			path = Cosmos;
 			sourceTree = "<group>";
 		};
@@ -403,7 +404,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -729,7 +730,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;

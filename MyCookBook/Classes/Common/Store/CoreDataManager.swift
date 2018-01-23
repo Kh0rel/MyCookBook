@@ -29,4 +29,19 @@ class CoreDataManager: NSObject {
         
     }
     
+    public func getStepByRecipeName(recipeName: String) -> [Step] {
+        var stepArray: [Step] = []
+        if let context = self.objectContext {
+            let request: NSFetchRequest<Step> = Step.fetchRequest()
+            if let steps = try? context.fetch(request) {
+                for step in steps {
+                    if step.recipe?.name == recipeName {
+                        stepArray.append(step)
+                    }
+                }
+            }
+        }
+        return stepArray
+    }
+    
 }

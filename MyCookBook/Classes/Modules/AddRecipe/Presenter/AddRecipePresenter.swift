@@ -14,6 +14,7 @@ protocol AddRecipeModuleInterface: class {
     func setIngredients(ingredients:[Ingredient])
     func setRecipeMainInfo(name:String,describe:String,difficulty:Double?,image:UIImage?)
     func saveRecipe()
+    func getSteps() -> [Step]
 }
 
 protocol AddRecipeInteractorOutput: class {
@@ -32,6 +33,12 @@ class AddRecipePresenter {
 }
 
 extension AddRecipePresenter: AddRecipeModuleInterface {
+    func getSteps() -> [Step] {
+        
+        let steps = CoreDataManager.shared.getStepByRecipeName(recipeName: (recipe?.name)!)
+        return steps
+    }
+    
     func setRecipeMainInfo(name: String, describe: String, difficulty: Double?, image: UIImage?) {
         self.recipe?.name = name
         self.recipe?.describe = describe
@@ -53,7 +60,7 @@ extension AddRecipePresenter: AddRecipeModuleInterface {
     
     func setSteps(steps: [Step]) {
         for step in steps {
-            self.recipe?.addToSteps(step)
+            recipe?.addToSteps(step)
         }
     }
     

@@ -36,7 +36,7 @@ class RecipesPresenter: RecipesModuleInterface, RecipesInteractorOutput {
     }
     
     func showDetailsForRecipe(recipe: Recipe) {
-        
+        self.wireframe.presentDetailsInterfaceForRecipes(recipe: recipe)
     }
     
     //MARK: - RecipesInteractorOutput methods

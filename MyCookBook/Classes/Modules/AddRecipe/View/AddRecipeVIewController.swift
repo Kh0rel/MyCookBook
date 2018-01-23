@@ -15,7 +15,8 @@ protocol AddRecipeViewInterface: class {
 class AddRecipeViewController: UIViewController {
     
     var presenter: AddRecipeModuleInterface!
-    
+    var steps: [Step] = []
+    var ingredients: [Ingredient] = []
     @IBOutlet weak var tableview: UITableView!
     
     override func viewDidLoad() {
@@ -51,8 +52,16 @@ class AddRecipeViewController: UIViewController {
 extension AddRecipeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
+        case 4:
+            let viewController = IngredientsViewController()
+            viewController.ingredients = self.ingredients
+            viewController.delegate = self
+            self.navigationController?.pushViewController(viewController, animated: true)
+            break
+            //ingredients view controller
         case 5:
             let viewController = StepsViewController()
+            viewController.steps = self.steps
             viewController.delegate = self
             self.navigationController?.pushViewController(viewController, animated: true)
             break
@@ -121,8 +130,17 @@ extension AddRecipeViewController: ImageTableViewCellDelegate {
     
 }
 
-extension AddRecipeViewController: StepsViewDelegate {
-    func passStepsToMainView(steps: [Step]) {
-        self.presenter.setSteps(steps: steps)
+extension AddRecipeViewController: StepsViewControllerDelegate {
+    func passStepsToRecipeView(steps: [Step]) {
+        self.steps = steps
+        //self.presenter.setSteps(steps: steps)
+        
+    }
+}
+
+extension AddRecipeViewController: IngredientsViewControllerDelegate {
+    func passIngredientsToRecipeView(ingredients: [Ingredient]) {
+        self.ingredients = ingredients
+
     }
 }

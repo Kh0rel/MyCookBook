@@ -8,19 +8,20 @@
 
 import UIKit
 
-protocol StepsViewDelegate {
-    func passStepsToMainView(steps:[Step])
+protocol StepsViewControllerDelegate {
+    func passStepsToRecipeView(steps: [Step])
 }
 
 class StepsViewController: UIViewController {
 
     var steps: [Step] = []
     var currentStep: Step?
+    var delegate: StepsViewControllerDelegate?
     @IBOutlet weak var tableview: UITableView!
     let timePicker: UIDatePicker = UIDatePicker()
-    var delegate: StepsViewDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.tableview.register(UINib(nibName: "StepTableViewCell", bundle: nil), forCellReuseIdentifier: "StepTableViewCell")
         self.tableview.dataSource = self
         self.tableview.delegate = self
@@ -37,7 +38,11 @@ class StepsViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         self.fetchStepInCell()
-        self.delegate?.passStepsToMainView(steps: steps)
+        if let delegate = self.delegate {
+            delegate.passStepsToRecipeView(steps: steps)
+        }
+        //pass steps to AddRecipeViewController [delegate]
+        
     }
     
     @objc func addStep() {

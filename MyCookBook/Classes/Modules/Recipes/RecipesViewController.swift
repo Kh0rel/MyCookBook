@@ -44,7 +44,6 @@ class RecipesViewController: UIViewController {
         self.tableview.addSubview(self.refreshControl)
         // Do any additional setup after loading the view.
         
-        
         print("iphone app")
         
         if WCSession.isSupported(){
@@ -93,7 +92,10 @@ extension RecipesViewController: RecipesViewInterface {
 }
 
 extension RecipesViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.presenter.showDetailsForRecipe(recipe: self.recipes[indexPath.row])
+        //self.navigationController?.pushViewController(DetailRecipeWireframe.assembleModule(), animated: true)
+    }
 }
 
 extension RecipesViewController: UITableViewDataSource {

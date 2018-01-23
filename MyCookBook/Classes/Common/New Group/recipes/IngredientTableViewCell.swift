@@ -10,13 +10,9 @@ import UIKit
 class IngredientTableViewCell: UITableViewCell {
     
     
-    @IBOutlet weak var nameLabel: NSLayoutConstraint!
-    @IBOutlet weak var nameText: UITextField!
-    @IBOutlet weak var typeLabel: UILabel!
-    @IBOutlet weak var typeText: UITextField!
-    @IBOutlet weak var weightLabel: UILabel!
-    @IBOutlet weak var weightText: UITextField!
-    
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var weight: UITextField!
+    @IBOutlet weak var type: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,6 +22,24 @@ class IngredientTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
+    }
+    
+    var ingredient: Ingredient! {
+        didSet {
+            name.text = ingredient.name ?? ""
+            weight.text = String(ingredient.weight)
+            type.text = ingredient.type ?? ""
+        }
+    }
+    
+    var modifiedIngredient: Ingredient {
+        get {
+            ingredient.name = name.text
+            ingredient.weight = (weight.text! as NSString).doubleValue
+            ingredient.type = type.text
+ 
+            return ingredient
+        }
     }
     
 }

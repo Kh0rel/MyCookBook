@@ -56,13 +56,11 @@ extension DetailRecipeViewController: UITableViewDelegate {
         if indexPath.section == 1 {
             if indexPath.row == 0 {
                 let viewController = IngredientsViewController()
-                viewController.ingredients = self.ingredients
-                viewController.delegate = self
+                viewController.ingredients = self.presenter.getRecipe().ingredients?.allObjects as! [Ingredient]
                 self.navigationController?.pushViewController(viewController, animated: true)
             } else {
                 let viewController = StepsViewController()
-                viewController.steps = self.steps
-                viewController.delegate = self
+                viewController.steps = self.presenter.getRecipe().steps?.allObjects as! [Step]
                 self.navigationController?.pushViewController(viewController, animated: true)
             }
         }
@@ -149,17 +147,6 @@ extension DetailRecipeViewController: ImageTableViewCellDelegate {
     }
 }
 
-extension DetailRecipeViewController: StepsViewControllerDelegate {
-    func passStepsToRecipeView(steps: [Step]) {
-        self.steps = steps
-    }
-}
-
-extension DetailRecipeViewController: IngredientsViewControllerDelegate {
-    func passIngredientsToRecipeView(ingredients: [Ingredient]) {
-        self.ingredients = ingredients
-    }
-}
 
 extension DetailRecipeViewController: DetailRecipeViewInterface {
     func showData(recipe: Recipe) {

@@ -27,8 +27,8 @@ class AddRecipePresenter {
     
     var interactor: AddRecipeInteractorInput!
     var wireframe: AddRecipeWireframe!
-    
-    var recipe: Recipe?
+    let context = CoreDataManager.shared.objectContext?.viewContext
+    var recipe : Recipe?
     
 }
 
@@ -38,6 +38,7 @@ extension AddRecipePresenter: AddRecipeModuleInterface {
     }
     
     func setRecipeMainInfo(name: String, describe: String, difficulty: Double?, image: UIImage?) {
+        recipe = Recipe(context: context!)
         self.recipe?.name = name
         self.recipe?.describe = describe
         self.recipe?.difficulty = difficulty ?? 0.0
@@ -45,7 +46,9 @@ extension AddRecipePresenter: AddRecipeModuleInterface {
     }
     
     func setIngredients(ingredients: [Ingredient]) {
-        
+        for ingredient in ingredients {
+            recipe?.addToIngredients(ingredient)
+        }
     }
     
     func updateView() {

@@ -26,7 +26,7 @@ class DetailRecipeViewController: UIViewController {
         super.viewDidLoad()
         tableviewConfiguration()
         
-        self.title = NSLocalizedString("Ajouter une recette", comment: "Add recipe screen title")
+        self.title = self.presenter.getRecipe().name
     }
     //4 + 2 (ingredients + steps)
     // name , description, difficulty , image

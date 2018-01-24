@@ -22,6 +22,10 @@ class AddRecipeViewController: UIViewController {
     
     @IBOutlet weak var tableview: UITableView!
     
+    var name : String = "toto"
+    var desc : String = "tata"
+    var difficulty : Double = 3.4
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableviewConfiguration()
@@ -37,6 +41,8 @@ class AddRecipeViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        fetchInfoInCell()
+        self.presenter.setRecipeMainInfo(name: name, describe: desc, difficulty: difficulty, image: #imageLiteral(resourceName: "recipe_picture"))
         self.presenter.saveRecipe()
     }
     
@@ -47,6 +53,31 @@ class AddRecipeViewController: UIViewController {
         self.tableview.register(UINib(nibName: "TextFieldTableViewCell", bundle: nil), forCellReuseIdentifier: TextFieldTableViewCell.cellIdentifier)
         self.tableview.register(UINib(nibName: "DifficultyTableViewCell", bundle: nil), forCellReuseIdentifier: DifficultyTableViewCell.cellIdentifier)
         self.tableview.register(UINib(nibName: "ButtonTableViewCell", bundle: nil), forCellReuseIdentifier: ButtonTableViewCell.cellidentifier)
+    }
+    
+    fileprivate func fetchInfoInCell() {
+        for i in 0...4 {
+            switch i {
+            case 1:
+                if let cell = tableview.cellForRow(at: IndexPath(row: i, section: 0)) as? TextFieldTableViewCell {
+                        name = cell.textField.text!
+                }
+                break
+            case 2:
+                if let cell = tableview.cellForRow(at: IndexPath(row: i, section: 0)) as? TextFieldTableViewCell {
+                    desc = cell.textField.text!
+                }
+                break
+            case 3:
+                if let cell = tableview.cellForRow(at: IndexPath(row: i, section: 0)) as? DifficultyTableViewCell {
+                    difficulty = cell.difficultyRate.rating
+                }
+                break
+            default:
+                break
+            }
+            
+        }
     }
 }
 
@@ -111,10 +142,12 @@ extension AddRecipeViewController: UITableViewDataSource {
                 case 1:
                     let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.cellIdentifier) as? TextFieldTableViewCell ?? TextFieldTableViewCell(style: .default, reuseIdentifier: TextFieldTableViewCell.cellIdentifier)
                     cell.titleLabel.text = NSLocalizedString("Nom", comment: "Recipe name")
+                    name = cell.textField.text!
                     return cell
                 case 2:
                     let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.cellIdentifier) as? TextFieldTableViewCell ?? TextFieldTableViewCell(style: .default, reuseIdentifier: TextFieldTableViewCell.cellIdentifier)
                     cell.titleLabel.text = NSLocalizedString("Description", comment: "Recipe description")
+                    desc = cell.textField.text!
                     return cell
                 case 3:
                     let cell = tableView.dequeueReusableCell(withIdentifier: DifficultyTableViewCell.cellIdentifier) as? DifficultyTableViewCell ?? DifficultyTableViewCell(style: .default, reuseIdentifier: DifficultyTableViewCell.cellIdentifier)

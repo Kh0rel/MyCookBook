@@ -8,6 +8,17 @@
 
 import UIKit
 
-class DetailRecipeInteractor: NSObject {
+protocol DetailRecipeInteractorInput: class {
+}
 
+class DetailRecipeInteractor {
+
+    weak var output: DetailRecipeInteractorOutput!
+    
+}
+
+extension DetailRecipeInteractor: DetailRecipeInteractorInput {
+
+
+    
 }

@@ -31,12 +31,6 @@
 		A96E459F1FFD2482005AB56E /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96E459D1FFD2482005AB56E /* ImageTableViewCell.xib */; };
 		A96E45A21FFD34AD005AB56E /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E45A01FFD34AD005AB56E /* TextFieldTableViewCell.swift */; };
 		A96E45A31FFD34AD005AB56E /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96E45A11FFD34AD005AB56E /* TextFieldTableViewCell.xib */; };
-		A9BB83242017E38300A91801 /* Step+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB831E2017E38200A91801 /* Step+CoreDataProperties.swift */; };
-		A9BB83252017E38300A91801 /* Step+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB831F2017E38200A91801 /* Step+CoreDataClass.swift */; };
-		A9BB83262017E38300A91801 /* Recipe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB83202017E38200A91801 /* Recipe+CoreDataClass.swift */; };
-		A9BB83272017E38300A91801 /* Ingredient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB83212017E38200A91801 /* Ingredient+CoreDataProperties.swift */; };
-		A9BB83282017E38300A91801 /* Ingredient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB83222017E38200A91801 /* Ingredient+CoreDataClass.swift */; };
-		A9BB83292017E38300A91801 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB83232017E38200A91801 /* Recipe+CoreDataProperties.swift */; };
 		A9C29BAA2017F40B009CE85D /* RecipesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C29BA82017F40B009CE85D /* RecipesCollectionViewCell.swift */; };
 		A9C29BAB2017F40B009CE85D /* RecipesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C29BA92017F40B009CE85D /* RecipesCollectionViewCell.xib */; };
 		A9DE04681FD737480079D0E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE04671FD737480079D0E8 /* AppDelegate.swift */; };
@@ -75,13 +69,19 @@
 		BF6DC34720176FE50079F7CA /* DifficultyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6DC34020176FE50079F7CA /* DifficultyTableViewCell.xib */; };
 		BF6DC3482017709F0079F7CA /* RecipeWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF484566200A6260001428F1 /* RecipeWatch.swift */; };
 		BF6DC349201770A20079F7CA /* IngredientWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF484569200A6D77001428F1 /* IngredientWatch.swift */; };
-		BF6DC34C201778E80079F7CA /* MyCookBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF6DC34A201778E80079F7CA /* MyCookBook.xcdatamodeld */; };
 		BF71174A20177E8300618AC9 /* IngredientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF71174920177E8300618AC9 /* IngredientTableViewCell.xib */; };
 		BF7BE831201792E9007A8556 /* DetailRecipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7BE830201792E9007A8556 /* DetailRecipeInteractor.swift */; };
 		BF7BE83320179301007A8556 /* DetailRecipePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7BE83220179301007A8556 /* DetailRecipePresenter.swift */; };
 		BF7BE8362017933F007A8556 /* DetailRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7BE8342017933F007A8556 /* DetailRecipeViewController.swift */; };
 		BF7BE8372017933F007A8556 /* DetailRecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7BE8352017933F007A8556 /* DetailRecipeViewController.xib */; };
 		BF7BE83920179369007A8556 /* DetailRecipeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7BE83820179369007A8556 /* DetailRecipeWireframe.swift */; };
+		BF7BE8422018A4B7007A8556 /* Step+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7BE83A2018A4B6007A8556 /* Step+CoreDataProperties.swift */; };
+		BF7BE8432018A4B7007A8556 /* Ingredient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7BE83B2018A4B7007A8556 /* Ingredient+CoreDataProperties.swift */; };
+		BF7BE8442018A4B7007A8556 /* Recipe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7BE83C2018A4B7007A8556 /* Recipe+CoreDataClass.swift */; };
+		BF7BE8452018A4B7007A8556 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7BE83D2018A4B7007A8556 /* Recipe+CoreDataProperties.swift */; };
+		BF7BE8462018A4B7007A8556 /* Ingredient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7BE83E2018A4B7007A8556 /* Ingredient+CoreDataClass.swift */; };
+		BF7BE8472018A4B7007A8556 /* MyCookBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF7BE83F2018A4B7007A8556 /* MyCookBook.xcdatamodeld */; };
+		BF7BE8482018A4B7007A8556 /* Step+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7BE8412018A4B7007A8556 /* Step+CoreDataClass.swift */; };
 		BFE5664C20176DB40080886F /* RecipesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5664520176DB30080886F /* RecipesWireframe.swift */; };
 		BFE5664D20176DB40080886F /* RecipesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5664620176DB30080886F /* RecipesPresenter.swift */; };
 		BFE5664F20176DB40080886F /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5664820176DB40080886F /* RecipesViewController.swift */; };
@@ -156,12 +156,6 @@
 		A96E459D1FFD2482005AB56E /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
 		A96E45A01FFD34AD005AB56E /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		A96E45A11FFD34AD005AB56E /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
-		A9BB831E2017E38200A91801 /* Step+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Step+CoreDataProperties.swift"; path = "/Users/guillaumechiebbouares/workspace/cours/master2/Apple & objet connecté/MyCookBook/MyCookBook/Classes/Common/Store/Step+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
-		A9BB831F2017E38200A91801 /* Step+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Step+CoreDataClass.swift"; path = "/Users/guillaumechiebbouares/workspace/cours/master2/Apple & objet connecté/MyCookBook/MyCookBook/Classes/Common/Store/Step+CoreDataClass.swift"; sourceTree = "<absolute>"; };
-		A9BB83202017E38200A91801 /* Recipe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataClass.swift"; path = "/Users/guillaumechiebbouares/workspace/cours/master2/Apple & objet connecté/MyCookBook/MyCookBook/Classes/Common/Store/Recipe+CoreDataClass.swift"; sourceTree = "<absolute>"; };
-		A9BB83212017E38200A91801 /* Ingredient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Ingredient+CoreDataProperties.swift"; path = "/Users/guillaumechiebbouares/workspace/cours/master2/Apple & objet connecté/MyCookBook/MyCookBook/Classes/Common/Store/Ingredient+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
-		A9BB83222017E38200A91801 /* Ingredient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Ingredient+CoreDataClass.swift"; path = "/Users/guillaumechiebbouares/workspace/cours/master2/Apple & objet connecté/MyCookBook/MyCookBook/Classes/Common/Store/Ingredient+CoreDataClass.swift"; sourceTree = "<absolute>"; };
-		A9BB83232017E38200A91801 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "/Users/guillaumechiebbouares/workspace/cours/master2/Apple & objet connecté/MyCookBook/MyCookBook/Classes/Common/Store/Recipe+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		A9C29BA82017F40B009CE85D /* RecipesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesCollectionViewCell.swift; sourceTree = "<group>"; };
 		A9C29BA92017F40B009CE85D /* RecipesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipesCollectionViewCell.xib; sourceTree = "<group>"; };
 		A9DE04641FD737480079D0E8 /* MyCookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,13 +202,19 @@
 		BF6DC33E20176FE50079F7CA /* StepTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StepTableViewCell.xib; sourceTree = "<group>"; };
 		BF6DC33F20176FE50079F7CA /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
 		BF6DC34020176FE50079F7CA /* DifficultyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DifficultyTableViewCell.xib; sourceTree = "<group>"; };
-		BF6DC34B201778E80079F7CA /* MyCookBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCookBook.xcdatamodel; sourceTree = "<group>"; };
 		BF71174920177E8300618AC9 /* IngredientTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientTableViewCell.xib; sourceTree = "<group>"; };
 		BF7BE830201792E9007A8556 /* DetailRecipeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeInteractor.swift; sourceTree = "<group>"; };
 		BF7BE83220179301007A8556 /* DetailRecipePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipePresenter.swift; sourceTree = "<group>"; };
 		BF7BE8342017933F007A8556 /* DetailRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeViewController.swift; sourceTree = "<group>"; };
 		BF7BE8352017933F007A8556 /* DetailRecipeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailRecipeViewController.xib; sourceTree = "<group>"; };
 		BF7BE83820179369007A8556 /* DetailRecipeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeWireframe.swift; sourceTree = "<group>"; };
+		BF7BE83A2018A4B6007A8556 /* Step+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Step+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BF7BE83B2018A4B7007A8556 /* Ingredient+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BF7BE83C2018A4B7007A8556 /* Recipe+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BF7BE83D2018A4B7007A8556 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BF7BE83E2018A4B7007A8556 /* Ingredient+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BF7BE8402018A4B7007A8556 /* MyCookBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCookBook.xcdatamodel; sourceTree = "<group>"; };
+		BF7BE8412018A4B7007A8556 /* Step+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Step+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BFE5664520176DB30080886F /* RecipesWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesWireframe.swift; sourceTree = "<group>"; };
 		BFE5664620176DB30080886F /* RecipesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesPresenter.swift; sourceTree = "<group>"; };
 		BFE5664820176DB40080886F /* RecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
@@ -492,13 +492,13 @@
 		A9DE04C91FDE81E40079D0E8 /* Store */ = {
 			isa = PBXGroup;
 			children = (
-				A9BB83202017E38200A91801 /* Recipe+CoreDataClass.swift */,
-				A9BB83232017E38200A91801 /* Recipe+CoreDataProperties.swift */,
-				A9BB831F2017E38200A91801 /* Step+CoreDataClass.swift */,
-				A9BB831E2017E38200A91801 /* Step+CoreDataProperties.swift */,
-				A9BB83222017E38200A91801 /* Ingredient+CoreDataClass.swift */,
-				A9BB83212017E38200A91801 /* Ingredient+CoreDataProperties.swift */,
-				BF6DC34A201778E80079F7CA /* MyCookBook.xcdatamodeld */,
+				BF7BE83F2018A4B7007A8556 /* MyCookBook.xcdatamodeld */,
+				BF7BE83E2018A4B7007A8556 /* Ingredient+CoreDataClass.swift */,
+				BF7BE83B2018A4B7007A8556 /* Ingredient+CoreDataProperties.swift */,
+				BF7BE83C2018A4B7007A8556 /* Recipe+CoreDataClass.swift */,
+				BF7BE83D2018A4B7007A8556 /* Recipe+CoreDataProperties.swift */,
+				BF7BE8412018A4B7007A8556 /* Step+CoreDataClass.swift */,
+				BF7BE83A2018A4B6007A8556 /* Step+CoreDataProperties.swift */,
 				BF484565200A623E001428F1 /* WatchModel */,
 				A9DE04CA1FDE82090079D0E8 /* CoreDataManager.swift */,
 			);
@@ -561,8 +561,8 @@
 			children = (
 				BF7BE830201792E9007A8556 /* DetailRecipeInteractor.swift */,
 				BF7BE83220179301007A8556 /* DetailRecipePresenter.swift */,
-				BF7BE8342017933F007A8556 /* DetailRecipeViewController.swift */,
 				BF7BE83820179369007A8556 /* DetailRecipeWireframe.swift */,
+				BF7BE8342017933F007A8556 /* DetailRecipeViewController.swift */,
 				BF7BE8352017933F007A8556 /* DetailRecipeViewController.xib */,
 			);
 			path = DetailRecipe;
@@ -902,6 +902,8 @@
 				A9DE04C51FDD79070079D0E8 /* DataManager.swift in Sources */,
 				BFE5664D20176DB40080886F /* RecipesPresenter.swift in Sources */,
 				A94F43831FFB788A00735A1E /* BaseViewController.swift in Sources */,
+				BF7BE8442018A4B7007A8556 /* Recipe+CoreDataClass.swift in Sources */,
+				BF7BE8422018A4B7007A8556 /* Step+CoreDataProperties.swift in Sources */,
 				BF7BE83320179301007A8556 /* DetailRecipePresenter.swift in Sources */,
 				A94F43A11FFBB10B00735A1E /* AddRecipePresenter.swift in Sources */,
 				BF6DC33120176FA20079F7CA /* AddRecipeVIewController.swift in Sources */,
@@ -913,30 +915,28 @@
 				BF6DC34120176FE50079F7CA /* DifficultyTableViewCell.swift in Sources */,
 				A94F439F1FFBB10100735A1E /* AddRecipeWireframe.swift in Sources */,
 				A9DE04C21FDD78CD0079D0E8 /* FileManager+document.swift in Sources */,
-				A9BB83252017E38300A91801 /* Step+CoreDataClass.swift in Sources */,
+				BF7BE8482018A4B7007A8556 /* Step+CoreDataClass.swift in Sources */,
 				9116415F20114AF00045905C /* (null) in Sources */,
 				BFE5664C20176DB40080886F /* RecipesWireframe.swift in Sources */,
+				BF7BE8432018A4B7007A8556 /* Ingredient+CoreDataProperties.swift in Sources */,
 				A9DE04681FD737480079D0E8 /* AppDelegate.swift in Sources */,
 				A96E45A21FFD34AD005AB56E /* TextFieldTableViewCell.swift in Sources */,
-				A9BB83262017E38300A91801 /* Recipe+CoreDataClass.swift in Sources */,
 				BF6DC34320176FE50079F7CA /* ButtonTableViewCell.swift in Sources */,
 				BF6DC3482017709F0079F7CA /* RecipeWatch.swift in Sources */,
-				A9BB83292017E38300A91801 /* Recipe+CoreDataProperties.swift in Sources */,
+				BF7BE8472018A4B7007A8556 /* MyCookBook.xcdatamodeld in Sources */,
 				9116415820114ADA0045905C /* (null) in Sources */,
-				A9BB83242017E38300A91801 /* Step+CoreDataProperties.swift in Sources */,
+				BF7BE8452018A4B7007A8556 /* Recipe+CoreDataProperties.swift in Sources */,
 				BF7BE8362017933F007A8556 /* DetailRecipeViewController.swift in Sources */,
+				BF7BE8462018A4B7007A8556 /* Ingredient+CoreDataClass.swift in Sources */,
 				9116412F201106F80045905C /* (null) in Sources */,
 				9116415A20114AE70045905C /* (null) in Sources */,
 				91164147201129D00045905C /* (null) in Sources */,
 				BF7BE83920179369007A8556 /* DetailRecipeWireframe.swift in Sources */,
-				BF6DC34C201778E80079F7CA /* MyCookBook.xcdatamodeld in Sources */,
-				A9BB83272017E38300A91801 /* Ingredient+CoreDataProperties.swift in Sources */,
 				BF6DC349201770A20079F7CA /* IngredientWatch.swift in Sources */,
 				A96E459E1FFD2482005AB56E /* ImageTableViewCell.swift in Sources */,
 				BF7BE831201792E9007A8556 /* DetailRecipeInteractor.swift in Sources */,
 				A9C29BAA2017F40B009CE85D /* RecipesCollectionViewCell.swift in Sources */,
 				BFE5664F20176DB40080886F /* RecipesViewController.swift in Sources */,
-				A9BB83282017E38300A91801 /* Ingredient+CoreDataClass.swift in Sources */,
 				BF6DC34220176FE50079F7CA /* IngredientTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1319,12 +1319,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BF6DC34A201778E80079F7CA /* MyCookBook.xcdatamodeld */ = {
+		BF7BE83F2018A4B7007A8556 /* MyCookBook.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BF6DC34B201778E80079F7CA /* MyCookBook.xcdatamodel */,
+				BF7BE8402018A4B7007A8556 /* MyCookBook.xcdatamodel */,
 			);
-			currentVersion = BF6DC34B201778E80079F7CA /* MyCookBook.xcdatamodel */;
+			currentVersion = BF7BE8402018A4B7007A8556 /* MyCookBook.xcdatamodel */;
 			path = MyCookBook.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

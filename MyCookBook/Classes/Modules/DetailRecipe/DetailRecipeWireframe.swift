@@ -10,26 +10,24 @@ import UIKit
 
 
 class DetailRecipeWireframe: NSObject {
-
     weak var detailRecipeViewController: DetailRecipeViewController!
     
     public static func assembleModule(recipe:Recipe) -> UIViewController {
         let view = DetailRecipeViewController()
-        let presenter = DetailRecipePresenter()
+        let presenter = DetailRecipePresenter(recipe: recipe)
         let interactor = DetailRecipeInteractor()
         let wireframe = DetailRecipeWireframe()
         
-        let navigation = UINavigationController(rootViewController: view)
         
-        //view.presenter = presenter
-        //presenter.interactor = interactor
-        //presenter.wireframe = wireframe
-        //presenter.view = view
+        view.presenter = presenter
+        presenter.interactor = interactor
+        presenter.wireframe = wireframe
+        presenter.view = view
         
-        //interactor.output = presenter
+        interactor.output = presenter
         wireframe.detailRecipeViewController = view
         
-        return navigation
+        return wireframe.detailRecipeViewController
     }
     
 }

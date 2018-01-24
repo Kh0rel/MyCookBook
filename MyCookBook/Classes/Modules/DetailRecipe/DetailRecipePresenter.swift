@@ -10,24 +10,37 @@ import UIKit
 
 
 protocol DetailRecipeModuleInterface: class {
-    
+    func getRecipe() -> Recipe
 }
 
 protocol DetailRecipeInteractorOutput: class {
     
 }
 
-class DetailRecipePresenter: DetailRecipeModuleInterface, DetailRecipeInteractorOutput {
-  
+class DetailRecipePresenter {
     
+    weak var view: DetailRecipeViewController!
     
-    var interactor: DetailRecipeInteractorOutput!
+    var interactor: DetailRecipeInteractorInput!
     var wireframe: DetailRecipeWireframe!
-    var detailRecipe: [Recipe] = []
-
     
-   
+    var recipe: Recipe?
     
+    init(recipe:Recipe) {
+        self.recipe = recipe
+    }
     
 }
+
+extension DetailRecipePresenter: DetailRecipeModuleInterface {
+    func getRecipe() -> Recipe {
+        return self.recipe!
+    }
+    
+}
+
+extension DetailRecipePresenter: DetailRecipeInteractorOutput {
+    
+}
+
 

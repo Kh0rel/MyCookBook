@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-       // self.loadFixtures()
+       //self.loadFixtures()
        // self.readFixtures()
         
         RootWireframe().presentTabBarView(in: window!)

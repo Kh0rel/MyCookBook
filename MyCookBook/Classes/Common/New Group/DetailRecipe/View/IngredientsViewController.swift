@@ -30,9 +30,14 @@ class IngredientsViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(IngredientsViewController.addIngredient))
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        fetchIngredientInCell()
+        self.delegate?.passIngredientsToRecipeView(ingredients: ingredients)
+    }
     
     @objc func addIngredient() {
-        let context = CoreDataManager.shared.objectContext
+        let context = CoreDataManager.shared.objectContext?.viewContext
         ingredients.append(Ingredient(context: context!))
         fetchIngredientInCell()
         tableview.reloadData()

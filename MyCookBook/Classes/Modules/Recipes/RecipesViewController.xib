@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,8 +13,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecipesViewController" customModule="MyCookBook" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="PNr-d5-yr7" id="wiS-sE-Owb"/>
                 <outlet property="noContentView" destination="HX6-nx-l1E" id="Xct-Z4-QsL"/>
-                <outlet property="tableview" destination="a4L-bW-nLn" id="VCq-uY-jsK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,10 +23,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a4L-bW-nLn">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </tableView>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HX6-nx-l1E">
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
@@ -54,17 +50,28 @@
                         <constraint firstItem="lJI-PP-Wjy" firstAttribute="centerY" secondItem="HX6-nx-l1E" secondAttribute="centerY" constant="-68.5" id="tm4-IM-DZi"/>
                     </constraints>
                 </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PNr-d5-yr7">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="scrollIndicatorInsets" minX="1" minY="1" maxX="1" maxY="1"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="vGK-Oa-K5q">
+                        <size key="itemSize" width="170" height="240"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="a4L-bW-nLn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2vC-G6-Blu"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a4L-bW-nLn" secondAttribute="trailing" id="3Ub-Md-DuU"/>
+                <constraint firstItem="PNr-d5-yr7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="JOZ-kS-rv4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PNr-d5-yr7" secondAttribute="trailing" id="N4s-wD-7Zb"/>
                 <constraint firstItem="HX6-nx-l1E" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="WLL-R4-Vsh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="PNr-d5-yr7" secondAttribute="bottom" id="dLm-Nu-mdl"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HX6-nx-l1E" secondAttribute="trailing" id="hiJ-i3-nrN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HX6-nx-l1E" secondAttribute="bottom" id="iJb-dz-JXK"/>
-                <constraint firstItem="a4L-bW-nLn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="m55-aO-jT7"/>
+                <constraint firstItem="PNr-d5-yr7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lTR-uh-Xfq"/>
                 <constraint firstItem="HX6-nx-l1E" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mIJ-Ws-dHv"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="a4L-bW-nLn" secondAttribute="bottom" id="otK-LA-fUx"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

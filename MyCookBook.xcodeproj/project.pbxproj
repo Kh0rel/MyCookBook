@@ -31,6 +31,14 @@
 		A96E459F1FFD2482005AB56E /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96E459D1FFD2482005AB56E /* ImageTableViewCell.xib */; };
 		A96E45A21FFD34AD005AB56E /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96E45A01FFD34AD005AB56E /* TextFieldTableViewCell.swift */; };
 		A96E45A31FFD34AD005AB56E /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96E45A11FFD34AD005AB56E /* TextFieldTableViewCell.xib */; };
+		A9BB83242017E38300A91801 /* Step+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB831E2017E38200A91801 /* Step+CoreDataProperties.swift */; };
+		A9BB83252017E38300A91801 /* Step+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB831F2017E38200A91801 /* Step+CoreDataClass.swift */; };
+		A9BB83262017E38300A91801 /* Recipe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB83202017E38200A91801 /* Recipe+CoreDataClass.swift */; };
+		A9BB83272017E38300A91801 /* Ingredient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB83212017E38200A91801 /* Ingredient+CoreDataProperties.swift */; };
+		A9BB83282017E38300A91801 /* Ingredient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB83222017E38200A91801 /* Ingredient+CoreDataClass.swift */; };
+		A9BB83292017E38300A91801 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB83232017E38200A91801 /* Recipe+CoreDataProperties.swift */; };
+		A9C29BAA2017F40B009CE85D /* RecipesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C29BA82017F40B009CE85D /* RecipesCollectionViewCell.swift */; };
+		A9C29BAB2017F40B009CE85D /* RecipesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C29BA92017F40B009CE85D /* RecipesCollectionViewCell.xib */; };
 		A9DE04681FD737480079D0E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE04671FD737480079D0E8 /* AppDelegate.swift */; };
 		A9DE046D1FD737480079D0E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DE046B1FD737480079D0E8 /* Main.storyboard */; };
 		A9DE046F1FD737480079D0E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DE046E1FD737480079D0E8 /* Assets.xcassets */; };
@@ -76,11 +84,9 @@
 		BF7BE83920179369007A8556 /* DetailRecipeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7BE83820179369007A8556 /* DetailRecipeWireframe.swift */; };
 		BFE5664C20176DB40080886F /* RecipesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5664520176DB30080886F /* RecipesWireframe.swift */; };
 		BFE5664D20176DB40080886F /* RecipesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5664620176DB30080886F /* RecipesPresenter.swift */; };
-		BFE5664E20176DB40080886F /* RecipesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5664720176DB40080886F /* RecipesTableViewCell.swift */; };
 		BFE5664F20176DB40080886F /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5664820176DB40080886F /* RecipesViewController.swift */; };
 		BFE5665020176DB40080886F /* RecipesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE5664920176DB40080886F /* RecipesViewController.xib */; };
 		BFE5665120176DB40080886F /* RecipesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5664A20176DB40080886F /* RecipesInteractor.swift */; };
-		BFE5665220176DB40080886F /* RecipesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE5664B20176DB40080886F /* RecipesTableViewCell.xib */; };
 		F8FD01BC981E6F032AF27B8E /* Pods_MyCookBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E807CAE3B509FA745F44685C /* Pods_MyCookBook.framework */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +156,14 @@
 		A96E459D1FFD2482005AB56E /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
 		A96E45A01FFD34AD005AB56E /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		A96E45A11FFD34AD005AB56E /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		A9BB831E2017E38200A91801 /* Step+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Step+CoreDataProperties.swift"; path = "/Users/guillaumechiebbouares/workspace/cours/master2/Apple & objet connecté/MyCookBook/MyCookBook/Classes/Common/Store/Step+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		A9BB831F2017E38200A91801 /* Step+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Step+CoreDataClass.swift"; path = "/Users/guillaumechiebbouares/workspace/cours/master2/Apple & objet connecté/MyCookBook/MyCookBook/Classes/Common/Store/Step+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		A9BB83202017E38200A91801 /* Recipe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataClass.swift"; path = "/Users/guillaumechiebbouares/workspace/cours/master2/Apple & objet connecté/MyCookBook/MyCookBook/Classes/Common/Store/Recipe+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		A9BB83212017E38200A91801 /* Ingredient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Ingredient+CoreDataProperties.swift"; path = "/Users/guillaumechiebbouares/workspace/cours/master2/Apple & objet connecté/MyCookBook/MyCookBook/Classes/Common/Store/Ingredient+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		A9BB83222017E38200A91801 /* Ingredient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Ingredient+CoreDataClass.swift"; path = "/Users/guillaumechiebbouares/workspace/cours/master2/Apple & objet connecté/MyCookBook/MyCookBook/Classes/Common/Store/Ingredient+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		A9BB83232017E38200A91801 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "/Users/guillaumechiebbouares/workspace/cours/master2/Apple & objet connecté/MyCookBook/MyCookBook/Classes/Common/Store/Recipe+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		A9C29BA82017F40B009CE85D /* RecipesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9C29BA92017F40B009CE85D /* RecipesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipesCollectionViewCell.xib; sourceTree = "<group>"; };
 		A9DE04641FD737480079D0E8 /* MyCookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DE04671FD737480079D0E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9DE046C1FD737480079D0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -203,11 +217,9 @@
 		BF7BE83820179369007A8556 /* DetailRecipeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeWireframe.swift; sourceTree = "<group>"; };
 		BFE5664520176DB30080886F /* RecipesWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesWireframe.swift; sourceTree = "<group>"; };
 		BFE5664620176DB30080886F /* RecipesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesPresenter.swift; sourceTree = "<group>"; };
-		BFE5664720176DB40080886F /* RecipesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesTableViewCell.swift; sourceTree = "<group>"; };
 		BFE5664820176DB40080886F /* RecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		BFE5664920176DB40080886F /* RecipesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipesViewController.xib; sourceTree = "<group>"; };
 		BFE5664A20176DB40080886F /* RecipesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesInteractor.swift; sourceTree = "<group>"; };
-		BFE5664B20176DB40080886F /* RecipesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipesTableViewCell.xib; sourceTree = "<group>"; };
 		CE7D05086C08DBE3AC2A12D5 /* Pods-MyCookBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCookBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCookBook/Pods-MyCookBook.release.xcconfig"; sourceTree = "<group>"; };
 		E807CAE3B509FA745F44685C /* Pods_MyCookBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCookBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F499CFD38719E1DA4C969117 /* Pods-MyCookBookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCookBookTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCookBookTests/Pods-MyCookBookTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -480,6 +492,12 @@
 		A9DE04C91FDE81E40079D0E8 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				A9BB83202017E38200A91801 /* Recipe+CoreDataClass.swift */,
+				A9BB83232017E38200A91801 /* Recipe+CoreDataProperties.swift */,
+				A9BB831F2017E38200A91801 /* Step+CoreDataClass.swift */,
+				A9BB831E2017E38200A91801 /* Step+CoreDataProperties.swift */,
+				A9BB83222017E38200A91801 /* Ingredient+CoreDataClass.swift */,
+				A9BB83212017E38200A91801 /* Ingredient+CoreDataProperties.swift */,
 				BF6DC34A201778E80079F7CA /* MyCookBook.xcdatamodeld */,
 				BF484565200A623E001428F1 /* WatchModel */,
 				A9DE04CA1FDE82090079D0E8 /* CoreDataManager.swift */,
@@ -502,11 +520,11 @@
 			children = (
 				BFE5664A20176DB40080886F /* RecipesInteractor.swift */,
 				BFE5664620176DB30080886F /* RecipesPresenter.swift */,
-				BFE5664720176DB40080886F /* RecipesTableViewCell.swift */,
-				BFE5664B20176DB40080886F /* RecipesTableViewCell.xib */,
 				BFE5664820176DB40080886F /* RecipesViewController.swift */,
 				BFE5664920176DB40080886F /* RecipesViewController.xib */,
 				BFE5664520176DB30080886F /* RecipesWireframe.swift */,
+				A9C29BA82017F40B009CE85D /* RecipesCollectionViewCell.swift */,
+				A9C29BA92017F40B009CE85D /* RecipesCollectionViewCell.xib */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -698,7 +716,7 @@
 				91164148201129D00045905C /* (null) in Resources */,
 				7432B018200C12C8001F9E2F /* (null) in Resources */,
 				BF6DC33620176FCA0079F7CA /* StepsViewController.xib in Resources */,
-				BFE5665220176DB40080886F /* RecipesTableViewCell.xib in Resources */,
+				A9C29BAB2017F40B009CE85D /* RecipesCollectionViewCell.xib in Resources */,
 				BF7BE8372017933F007A8556 /* DetailRecipeViewController.xib in Resources */,
 				9116412C2010FB550045905C /* (null) in Resources */,
 				A9DE04721FD737480079D0E8 /* LaunchScreen.storyboard in Resources */,
@@ -895,24 +913,30 @@
 				BF6DC34120176FE50079F7CA /* DifficultyTableViewCell.swift in Sources */,
 				A94F439F1FFBB10100735A1E /* AddRecipeWireframe.swift in Sources */,
 				A9DE04C21FDD78CD0079D0E8 /* FileManager+document.swift in Sources */,
+				A9BB83252017E38300A91801 /* Step+CoreDataClass.swift in Sources */,
 				9116415F20114AF00045905C /* (null) in Sources */,
 				BFE5664C20176DB40080886F /* RecipesWireframe.swift in Sources */,
 				A9DE04681FD737480079D0E8 /* AppDelegate.swift in Sources */,
 				A96E45A21FFD34AD005AB56E /* TextFieldTableViewCell.swift in Sources */,
+				A9BB83262017E38300A91801 /* Recipe+CoreDataClass.swift in Sources */,
 				BF6DC34320176FE50079F7CA /* ButtonTableViewCell.swift in Sources */,
 				BF6DC3482017709F0079F7CA /* RecipeWatch.swift in Sources */,
+				A9BB83292017E38300A91801 /* Recipe+CoreDataProperties.swift in Sources */,
 				9116415820114ADA0045905C /* (null) in Sources */,
-				BFE5664E20176DB40080886F /* RecipesTableViewCell.swift in Sources */,
+				A9BB83242017E38300A91801 /* Step+CoreDataProperties.swift in Sources */,
 				BF7BE8362017933F007A8556 /* DetailRecipeViewController.swift in Sources */,
 				9116412F201106F80045905C /* (null) in Sources */,
 				9116415A20114AE70045905C /* (null) in Sources */,
 				91164147201129D00045905C /* (null) in Sources */,
 				BF7BE83920179369007A8556 /* DetailRecipeWireframe.swift in Sources */,
 				BF6DC34C201778E80079F7CA /* MyCookBook.xcdatamodeld in Sources */,
+				A9BB83272017E38300A91801 /* Ingredient+CoreDataProperties.swift in Sources */,
 				BF6DC349201770A20079F7CA /* IngredientWatch.swift in Sources */,
 				A96E459E1FFD2482005AB56E /* ImageTableViewCell.swift in Sources */,
 				BF7BE831201792E9007A8556 /* DetailRecipeInteractor.swift in Sources */,
+				A9C29BAA2017F40B009CE85D /* RecipesCollectionViewCell.swift in Sources */,
 				BFE5664F20176DB40080886F /* RecipesViewController.swift in Sources */,
+				A9BB83282017E38300A91801 /* Ingredient+CoreDataClass.swift in Sources */,
 				BF6DC34220176FE50079F7CA /* IngredientTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1177,12 +1201,14 @@
 			baseConfigurationReference = 6B2F6C301696DFFA096FBB50 /* Pods-MyCookBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MyCookBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shemana.application.MyCookBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1193,12 +1219,14 @@
 			baseConfigurationReference = CE7D05086C08DBE3AC2A12D5 /* Pods-MyCookBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MyCookBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shemana.application.MyCookBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

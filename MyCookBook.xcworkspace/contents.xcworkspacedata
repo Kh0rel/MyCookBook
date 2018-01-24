@@ -2,6 +2,24 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/guillaumechiebbouares/workspace/cours/master2/Apple &amp; objet connecte&#x301;/MyCookBook/MyCookBook/Classes/Common/Store/Recipe+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/guillaumechiebbouares/workspace/cours/master2/Apple &amp; objet connecte&#x301;/MyCookBook/MyCookBook/Classes/Common/Store/Recipe+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/guillaumechiebbouares/workspace/cours/master2/Apple &amp; objet connecte&#x301;/MyCookBook/MyCookBook/Classes/Common/Store/Step+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/guillaumechiebbouares/workspace/cours/master2/Apple &amp; objet connecte&#x301;/MyCookBook/MyCookBook/Classes/Common/Store/Step+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/guillaumechiebbouares/workspace/cours/master2/Apple &amp; objet connecte&#x301;/MyCookBook/MyCookBook/Classes/Common/Store/Ingredient+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/guillaumechiebbouares/workspace/cours/master2/Apple &amp; objet connecte&#x301;/MyCookBook/MyCookBook/Classes/Common/Store/Ingredient+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:MyCookBook.xcodeproj">
    </FileRef>
    <FileRef

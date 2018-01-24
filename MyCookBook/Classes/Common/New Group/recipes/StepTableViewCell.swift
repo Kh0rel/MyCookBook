@@ -19,7 +19,7 @@ class StepTableViewCell: UITableViewCell {
         didSet {
             stepNumber.text = step.name ?? ""
             stepDesrcription.text = step.describe ?? ""
-            stepTime.text = step.duration?.stringValue ?? ""
+            stepTime.text = "\(step.duration)"
         }
     }
     
@@ -29,7 +29,7 @@ class StepTableViewCell: UITableViewCell {
             step.describe = stepDesrcription.text
             let formatter = NumberFormatter()
             formatter.generatesDecimalNumbers = true
-            step.duration = formatter.number(from: stepTime.text!) as? NSDecimalNumber ?? 0
+            step.duration = (stepTime.text as! NSString).doubleValue
             
             return step
         }

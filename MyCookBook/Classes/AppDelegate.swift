@@ -19,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
+        
+       // self.loadFixtures()
+       // self.readFixtures()
+        
         RootWireframe().presentTabBarView(in: window!)
        
     
@@ -45,8 +49,60 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        self.saveContext()
     }
 
+    func saveContext() {
+        if let context = CoreDataManager.shared.objectContext?.viewContext {
+            if context.hasChanges {
+                do {
+                    try context.save()
+                } catch {
+                    let nserror = error as NSError
+                    fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+                }
+            }
+        }
+    }
 
 }
 
+// Fixture
+
+extension AppDelegate {
+    func loadFixtures() {
+        let context = CoreDataManager.shared.objectContext?.viewContext
+        
+        for i in 0..<10 {
+            var recipe = Recipe(context: context!)
+            recipe.name = "Test + \(i)"
+            recipe.describe = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+            recipe.difficulty = 4.0
+            for y in 0..<5 {
+                var ingredient = Ingredient(context: context!)
+                ingredient.name = "Ingredient + \(y)"
+                ingredient.type = "Kg"
+                ingredient.weight = 3.50
+                recipe.addToIngredients(ingredient)
+            }
+            for x in 0..<4 {
+                var step = Step(context: context!)
+                step.name = "Step + \(x)"
+                step.describe = "lorem ipsum lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem ipsum lorem \(x)"
+                step.duration = 15.0
+                recipe.addToSteps(step)
+            }
+        }
+        self.saveContext()
+        
+    }
+    
+    func readFixtures() {
+        let context = CoreDataManager.shared.objectContext
+        let request: NSFetchRequest<Recipe> = Recipe.fetchRequest()
+        if let recipes = try? request.execute() {
+            print(recipes)
+        }
+        
+    }
+}

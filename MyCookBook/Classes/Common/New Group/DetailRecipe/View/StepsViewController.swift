@@ -46,7 +46,7 @@ class StepsViewController: UIViewController {
     }
     
     @objc func addStep() {
-        let context = CoreDataManager.shared.objectContext
+        let context = CoreDataManager.shared.objectContext?.viewContext
         steps.append(Step(context: context!))
         fetchStepInCell()
         tableview.reloadData()

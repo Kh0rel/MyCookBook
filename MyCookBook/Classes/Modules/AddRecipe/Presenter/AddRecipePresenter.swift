@@ -34,16 +34,14 @@ class AddRecipePresenter {
 
 extension AddRecipePresenter: AddRecipeModuleInterface {
     func getSteps() -> [Step] {
-        
-        let steps = CoreDataManager.shared.getStepByRecipeName(recipeName: (recipe?.name)!)
-        return steps
+        return []
     }
     
     func setRecipeMainInfo(name: String, describe: String, difficulty: Double?, image: UIImage?) {
         self.recipe?.name = name
         self.recipe?.describe = describe
         self.recipe?.difficulty = difficulty ?? 0.0
-        self.recipe?.picture = UIImagePNGRepresentation(image!) ?? UIImagePNGRepresentation(#imageLiteral(resourceName: "recipe_picture"))
+        //self.recipe?.picture = UIImagePNGRepresentation(image!) ?? UIImagePNGRepresentation(#imageLiteral(resourceName: "recipe_picture"))
     }
     
     func setIngredients(ingredients: [Ingredient]) {

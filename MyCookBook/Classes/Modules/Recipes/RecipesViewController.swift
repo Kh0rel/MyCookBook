@@ -19,10 +19,11 @@ protocol RecipesViewInterface: class {
 
 class RecipesViewController: UIViewController {
 
-    static let recipesCellIdentifier = "recipesIdentifier"
+    static let recipesCellIdentifier = "RecipesCollectionViewCell"
     var presenter: RecipesModuleInterface!
     var recipes: [Recipe] = []
     
+
     lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         
@@ -32,19 +33,18 @@ class RecipesViewController: UIViewController {
     }()
     
     @IBOutlet weak var noContentView: UIView!
-    @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.collectionView.register(UINib(nibName: "RecipesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: RecipesViewController.recipesCellIdentifier)
         self.title = NSLocalizedString("Vos recettes", comment: "Recipes screen title")
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.blue]
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(showAddRecipeView))
-        self.tableview.register(UINib(nibName: "RecipesTableViewCell", bundle:nil), forCellReuseIdentifier: RecipesViewController.recipesCellIdentifier)
-        self.tableview.delegate = self
-        self.tableview.dataSource = self
-        self.tableview.addSubview(self.refreshControl)
-        // Do any additional setup after loading the view.
-        
-        print("iphone app")
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+        self.collectionView.backgroundColor = .clear
+        self.collectionView.contentInset = UIEdgeInsets(top: 8, left: 10, bottom: 8, right: 14)
         
         if WCSession.isSupported(){
             
@@ -52,9 +52,6 @@ class RecipesViewController: UIViewController {
             session.delegate = self
             session.activate()
         }
-        
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,7 +61,6 @@ class RecipesViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 
@@ -72,7 +68,7 @@ extension RecipesViewController: RecipesViewInterface {
 
     func showRecipesData(recipes: [Recipe]) {
         self.recipes = recipes
-        self.tableview.reloadData()
+        self.collectionView.reloadData()
         if self.refreshControl.isRefreshing {
            self.refreshControl.endRefreshing()
         }
@@ -91,26 +87,23 @@ extension RecipesViewController: RecipesViewInterface {
     }
 }
 
-extension RecipesViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+extension RecipesViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.presenter.showDetailsForRecipe(recipe: self.recipes[indexPath.row])
-        //self.navigationController?.pushViewController(DetailRecipeWireframe.assembleModule(), animated: true)
     }
 }
 
-extension RecipesViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension RecipesViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.recipes.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecipesViewController.recipesCellIdentifier, for: indexPath) as! RecipesCollectionViewCell
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: RecipesViewController.recipesCellIdentifier) as? RecipesTableViewCell ?? RecipesTableViewCell(style: .default, reuseIdentifier: RecipesViewController.recipesCellIdentifier)
         cell.recipe = self.recipes[indexPath.row]
         return cell
     }
-    
-    
 }
 
 extension RecipesViewController: WCSessionDelegate{
@@ -132,7 +125,7 @@ extension RecipesViewController: WCSessionDelegate{
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
         
-        if let context = CoreDataManager.shared.objectContext {
+        if let context = CoreDataManager.shared.objectContext?.viewContext {
             let request: NSFetchRequest<Recipe> = Recipe.fetchRequest()
             if let recipes = try? context.fetch(request) {
                 var recipesWatch: [RecipeWatch] = []

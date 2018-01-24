@@ -20,7 +20,7 @@ class RecipesInteractor: RecipesInteractorInput {
     
     
     func fetchRecipes() {
-        if let context = CoreDataManager.shared.objectContext {
+        if let context = CoreDataManager.shared.objectContext?.viewContext {
             let request: NSFetchRequest<Recipe> = Recipe.fetchRequest()
             if let recipes = try? context.fetch(request) {
                 output.recipesFetched(recipes: recipes)
